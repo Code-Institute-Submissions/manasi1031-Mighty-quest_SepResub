@@ -9,9 +9,9 @@
 }
 
 body {
-    font-family: cantarell, sans-serif;
-    color: #010000;
-    background-color: #CA935E;
+    font-family: 'Lato', sans-serif;
+    color: #0E0C09;
+    background-color: #AE9C84;
 }
 
 /* Heading and navigation*/
@@ -32,3 +32,34 @@ body {
     background-size: cover;
 }
 
+
+
+
+
+/* Footer */
+footer {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .social-media {
+    text-align: justify;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding-left: 0px;
+
+}
+
+.social-media li {
+    padding-right: 1em;
+}
+
+.social-media i {
+    margin: 1%;
+    padding: 1%;
+    list-style-type: none;
+}
