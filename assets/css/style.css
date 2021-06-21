@@ -48,7 +48,7 @@ h1, h2, h3, #menu {
 
 #menu a:hover {
     border-bottom: 3px solid #70486D;
-    font-size: 1vw;
+    font-size: 1em;
 }
 
 /* Hero Image Stylying */
@@ -80,7 +80,6 @@ h1, h2, h3, #menu {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    list-style-type: none;
 }
 
 .bottom-link span {
@@ -134,4 +133,50 @@ footer {
     margin: 1%;
     padding: 1%;
     list-style-type: none;
+}
+
+/* 404 Error Page */
+#error-out {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    
+    margin-top: 250px;
+    height: 600px;
+}
+
+#error-text {
+    font-size: 100%;
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-align: center;
+
+    width: auto;
+    height: 100%;
+
+    padding: 10px;
+    
+    background-color: rgba(197,214,201,0.6);
+    color: #0F0C00;
+
+    top: auto;
+    right: auto;
+    
+    position: relative;
+}
+
+#error-text h2 {
+    font-size: 4rem;
+    height: 100px;
+}
+
+#error-text p {
+    height: 75px;
+}
+
+#error-text img {
+    height: auto;
+    max-width: 100%;
 }
