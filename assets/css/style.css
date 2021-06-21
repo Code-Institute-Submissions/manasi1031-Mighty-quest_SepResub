@@ -1,0 +1,17 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Lato&display=swap');;
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: cantarell, sans-serif;
+    color: #010000;
+    background-color: #CA935E;
+}
+
+/* Heading and Logo */
