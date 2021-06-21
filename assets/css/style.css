@@ -14,4 +14,21 @@ body {
     background-color: #CA935E;
 }
 
-/* Heading and Logo */
+/* Heading and navigation*/
+
+
+/* Hero Image Stylying */
+
+#hero-out {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    background: url(../images/quest-hero-image.jpg) no-repeat center center;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+}
+
