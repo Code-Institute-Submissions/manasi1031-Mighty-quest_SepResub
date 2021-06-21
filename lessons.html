@@ -35,22 +35,76 @@
     <!--Lessons tab-->
     <section>
         <h2>Lessons</h2>
-        <p>Please click on the "plus" sign to see the material for the lesson.</p>
-        <button class="tab">Geography - Compass</button>
-        <div class="section">
+        <p>Please click on the subject to see the material for the lesson. Click again to close lesson.</p>
+        
+        <!--Geography lesson-->
+        <button type="button" class="lesson">Geography - Compass</button>
+        <div class="sub-lesson">
             <h3>Compass</h3>
-            <img src="assets/images/compass.jpg" alt="Compass image for navigation">
-            <p> 
-                Compasses have been used for over 2000 years. 
-                A compass is an important tool for finding direction. It helps you to find your way when you are using a map.  
-                There are four main points of the compass: north, east, south and west. These are called compass points.
-                Can you think of an easy way to remember the order of the compass points? For example: 
-                <b><q>Never Eat Silly Worms</q> or <q>Naughty Elephants Squirt Water</q></b>
-                <br>
-                <b>Using a Compass:</b>
-                The needle on a compass moves freely around the dial, always searching for north. Once the compass points to north, this helps someone to see where east, south and west are located. 
-            </p>
-            <button class="bottom-link"><span>Quiz</span></button>
+            <img src="assets/images/compass.jpg" alt="Compass image for navigation" class="image-box">
+            <div class="text-content">
+                <p> 
+                    Compasses have been used for over 2000 years. 
+                    A compass is an important tool for finding direction. It helps you to find your way when you are using a map.  
+                    There are four main points of the compass: north, east, south and west. These are called compass points.
+                    Can you think of an easy way to remember the order of the compass points? For example: 
+                    <b><q>Never Eat Silly Worms</q> or <q>Naughty Elephants Squirt Water</q></b>
+                </p>
+                <p>
+                    <b>Using a Compass:</b>
+                    <br>
+                    The needle on a compass moves freely around the dial, always searching for north. Once the compass points to north, this helps someone to see where east, south and west are located. 
+                    Some compasses can be divided into further four with these letters namely: NE - North East, NW - North West, SE - South East and SW - South West.
+                </p>
+                <p>Click on button to proceed directly to quiz.</p>
+                <button class="bottom-link"><span>Compass Quiz</span></button>
+            </div>
+        </div>
+
+        <!--Science lesson-->
+        <button type="button" class="lesson">Science - Balanced Diet</button>
+        <div class="sub-lesson">
+            <h3>Balanced Diet - Healthy Eating</h3>
+            <img src="assets/images/vegan.jpg" alt="Food pyramid" class="image-box">
+            <div class="text-content">
+                <p> 
+                    Eating a balanced diet is important for your health. If you eat food from each of the five food groups, you’ll be getting a fantastic mix of the best nutrients and vitamins! 
+                    <br>
+                    <b>Carbohydrates </b>
+                    Carbohydrates give you energy, calcium and B vitamins. Some examples are pasta, rice, oats, potatoes and sweet potatoes or noodles, couscous and bread. Breakfast cereals are also a carbohydrate and many contain extra iron too. You should eat 3 to 5 servings per day. 
+                    <br>
+                    <b>Protein</b>
+                    Proteins are building blocks for the body because they help it grow and repair itself. Protein is found in meat, fish and eggs. Nuts, beans, lentils, peas, Quorn and soya are great sources of vegetable protein. Additionally, these foods also provide you with iron and other vitamins and minerals.You should eat 2-3 servings of these per day. 
+                    <br>
+                    <b>Dairy</b>
+                    Dairy products are packed with calcium, protein and vitamins such as vitamins A, D and B12. These are important because they keep your bones and teeth healthy. Our bodies easily absorb the calcium from dairy products. Some examples are milk, yoghurt, fromage frais and cheese. You should aim to eat 3 servings per day. 
+                    <br>
+                    <b>Fruit and Vegetables</b>
+                    Fruit and vegetables are brilliant for your diet. They’re full of health-boosting vitamins, antioxidants and fibre. Eating these keep you feeling full and they help keep your digestive system healthy. Furthermore, they’re low in calories. If you eat a wide variety of fruit and vegetables, you’ll be getting a range of the important nutrients that you need. You should eat at least 5 servings of these per day.  
+                    <br>
+                    <b>Fats and Sugar</b>
+                    It’s important not to have too many foods from this group because they give us a lot of energy from calories but not much nutrition. Try to keep foods such as butter, margarine, cooking oils and salad dressings to a minimum and save chocolate, crisps, sugary soft drinks, sweets, jam, cream, cakes, pudding, biscuits and pastries as an occasional treat. Too much of this food group can damage your teeth or make you gain weight! 
+                </p>
+                <p>Click on button to proceed directly to quiz.</p>
+                <button class="bottom-link"><span>Balanced Diet Quiz</span></button>
+            </div>
+        </div>
+
+        <!--Maths lesson-->
+        <button type="button" class="lesson">Maths</button>
+        <div class="sub-lesson">
+            <h3>Maths</h3>
+            <img src="assets/images/abacus.jpg" alt="Abacus for easy Maths learning" class="image-box">
+            <div class="text-content">
+                <p>Please click on below links to see the videos from Oxford Owl.</p>
+                <!--Videos taken directly from website and embedded-->
+                <iframe src="https://www.youtube.com/embed/linbjLi2K5s?control=0">
+                How to do division by grouping</iframe>
+                <iframe src="https://www.youtube.com/embed/NwpLG9qIwIs?control=0">
+                What are multiples?</iframe>
+                <p>Click on button to proceed directly to quiz.</p>
+                <button class="bottom-link"><span>Maths Quiz</span></button>
+            </div>
         </div>
     </section>
 
@@ -89,7 +143,7 @@
     </footer>
 
     <!--Javascript page link CHANGE-->
-    <script src="assets/js/indexscript.js"></script>
+    <script src="assets/js/lessonscript.js"></script>
 
     <!--Fontawesome script-->
     <script src="https://kit.fontawesome.com/22f8691744.js" crossorigin="anonymous"></script>

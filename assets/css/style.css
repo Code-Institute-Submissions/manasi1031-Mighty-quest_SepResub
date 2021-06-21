@@ -47,12 +47,10 @@ h1, h2, h3, #menu {
 }
 
 #menu a:hover {
-    border-bottom: 3px solid #70486D;
     font-size: 1em;
 }
 
 /* Hero Image Stylying */
-
 #hero-out {
     height: auto;
     width: 100%;
@@ -66,7 +64,7 @@ h1, h2, h3, #menu {
     background-size: 100%;
 }
 
-/* Quick Links */
+/* Quick Bottom Links */
 .bottom-link {
     display: inline-block;
     border-radius: 4px;
@@ -136,11 +134,43 @@ footer {
 }
 
 /* Lessons Page */
+.lesson {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .lesson:hover {
+    background-color: #555;
+}
+  
+.sub-lesson {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
 
+.sub-lesson img {
+    width: auto;
+    height: auto;
+}
 
+.image-box {
+    float: left;
+    max-width: 45%;
+}
 
-
-
+.text-content {
+    float: right;
+    max-width: 45%;
+}
 
 /* 404 Error Page */
 #error-out {
