@@ -15,6 +15,14 @@ body {
     text-align: justify;
 }
 
+a:visited {
+    color: inherit;
+}
+
+a.active {
+    background: none;
+}
+
 /* Heading and navigation menu*/
 h1, h2, h3, #menu {
     font-family: 'Barlow Condensed', sans-serif;
@@ -47,8 +55,12 @@ h1, h2, h3, #menu {
 }
 
 #menu a:hover {
-    font-size: 1em;
-    color: red;
+    font-size: 1.25em;
+    color: purple;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 /* Hero Image Stylying */
@@ -71,7 +83,7 @@ h1, h2, h3, #menu {
     border-radius: 4px;
     background-color: #485970;
     border: none;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     font-size: 1.25em;
     padding: 10px;
