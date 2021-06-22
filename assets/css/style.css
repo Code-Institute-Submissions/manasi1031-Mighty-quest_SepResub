@@ -10,8 +10,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #40515B;
-    background-color: #AE9C84;
+    color: #67442E;
+    background-color: #C6EFF4;
     text-align: justify;
 }
 
@@ -28,7 +28,7 @@ h1, h2, h3, #menu {
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    color: #40515B;
+    color: #345579;
     letter-spacing: 5px;
     font-size: 1.5em;
 }
@@ -56,7 +56,7 @@ h1, h2, h3, #menu {
 
 #menu a:hover {
     font-size: 1.25em;
-    color: purple;
+    color: #77335D;
 }
 
 .mobile-menu {
@@ -71,7 +71,7 @@ h1, h2, h3, #menu {
 }
 
 #hero-image {
-    background: url(../images/quest-hero-image.jpg) no-repeat center center;
+    background: url(../images/quest-hero-image.jpeg) no-repeat center center;
     height: 800px;
     width: 100%;
     background-size: 100%;
@@ -81,9 +81,9 @@ h1, h2, h3, #menu {
 .bottom-link {
     display: inline-block;
     border-radius: 4px;
-    background-color: #485970;
+    background-color: #80C40B;
     border: none;
-    color: #FFFFFF;
+    color: #14202E;
     text-align: center;
     font-size: 1.25em;
     padding: 10px;
@@ -148,7 +148,7 @@ footer {
 
 /* Lessons Page */
 .lesson {
-    background-color: #777;
+    background-color: #273FC6;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -160,14 +160,14 @@ footer {
 }
   
 .active, .lesson:hover {
-    background-color: #555;
+    background-color: #C227C6;
 }
   
 .sub-lesson {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #C3BFC3;
 }
 
 .sub-lesson img {
@@ -188,7 +188,7 @@ footer {
 /* Quiz page */
 .quiz-tab {
     overflow: hidden;
-    background: white;
+    background: #C227C6;
 }
 
 .quiz-tab button {
@@ -197,14 +197,17 @@ footer {
     transition: 0.2s;
     border: 1px solid;
     width: auto;
-    padding: 15px, 15px;
+    padding: 15px;
+    margin: 0, 10px;
+    font-size: 1.2rem;
 }
 
 .quiz-data {
     display: none;
-    background: white;
+    background: #C3BFC3;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #67442E;
+    font: #67442E;
 }
 
 /* Contact Us page */
@@ -229,7 +232,7 @@ footer {
     width: 100%;
     height: auto;
 
-    background-color: rgba(197, 208, 215,0.7);
+    background-color: rgba(197, 208, 215, 0.7);
     color: #0F0C00;
 
     top: 350px;
@@ -274,6 +277,7 @@ footer {
 
 #contactus-form li label{
     font-weight: bold;
+    color: inherit;
 }
 
 #contactus-form li input {
@@ -287,7 +291,7 @@ footer {
 #submit-button {
     font-family: inherit;
     border: 3px double #704848;
-    color: #704848;
+    background-color: #80C40B;
     font-size: 1.25rem;
     margin-top: 10px;
 }
@@ -322,7 +326,7 @@ footer {
     padding: 10px;
     
     background-color: rgba(197,214,201,0.6);
-    color: #0F0C00;
+    color: inherit;
 
     top: auto;
     right: auto;
