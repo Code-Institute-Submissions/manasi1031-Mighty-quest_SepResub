@@ -185,6 +185,28 @@ footer {
     max-width: 45%;
 }
 
+/* Quiz page */
+.quiz-tab {
+    overflow: hidden;
+    background: white;
+}
+
+.quiz-tab button {
+    background: inherit;
+    float: left;
+    transition: 0.2s;
+    border: 1px solid;
+    width: auto;
+    padding: 15px, 15px;
+}
+
+.quiz-data {
+    display: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
 /* Contact Us page */
 #contactus-out {
     height: auto;
