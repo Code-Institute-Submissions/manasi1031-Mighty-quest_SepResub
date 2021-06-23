@@ -210,6 +210,18 @@ footer {
     font: #67442E;
 }
 
+.btn-look {
+    border-radius: 4px;
+    background-color: #80C40B;
+    border: none;
+    color: #14202E;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    width: 200px;
+    margin: 5px;
+}
+
 /* Contact Us page */
 #contactus-out {
     height: auto;

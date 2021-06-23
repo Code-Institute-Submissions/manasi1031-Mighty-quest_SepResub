@@ -23,14 +23,14 @@ function openQuiz(event, subject) {
 //Create Questions
 
 let questions = [
-    new question("In a Compass, what does N stand for?", ["Nice", "North", "Nest"], "North"),
-    new question("In a Compass, what does S stand for?", ["Sea", "Sun", "South"], "South"),
-    new question("In a Compass, what does E stand for?", ["East", "Egg", "Elephant"], "East"),
-    new question("In a Compass, what does W stand for?", ["West", "Whale", "Wise"], "West"),
-    new question("In a Compass, what does NE stand for?", ["November", "Never", "North-East"], "North-East"),
-    new question("In a Compass, what does SE stand for?", ["Surrender", "Summer", "South-East"], "South-East"),
-    new question("In a Compass, what does SW stand for?", ["Sweet", "Swish", "South-West"], "South-West"),
-    new question("In a Compass, what does NW stand for?", ["Nowhere", "Not-weary", "North-West"], "North-West"),
+    new question("In a Compass, what does \'N'\ stand for?", ["Nice", "North", "Nest"], "North"),
+    new question("In a Compass, what does \'S'\ stand for?", ["Sea", "Sun", "South"], "South"),
+    new question("In a Compass, what does \'E'\ stand for?", ["East", "Egg", "Elephant"], "East"),
+    new question("In a Compass, what does \'W'\ stand for?", ["West", "Whale", "Wise"], "West"),
+    new question("In a Compass, what does \'NE'\ stand for?", ["November", "Never", "North-East"], "North-East"),
+    new question("In a Compass, what does \'SE'\ stand for?", ["Surrender", "Summer", "South-East"], "South-East"),
+    new question("In a Compass, what does \'SW'\ stand for?", ["Sweet", "Swish", "South-West"], "South-West"),
+    new question("In a Compass, what does \'NW'\ stand for?", ["Nowhere", "Not-weary", "North-West"], "North-West"),
 ];
 
 // Quiz prototype for questions, answers and guess
@@ -65,3 +65,51 @@ quiz.prototype.hasEnded = function() {
     return this.currentQuestionIndex >= this.questions.length;
 };
 
+// Quiz Game function to sort out the working of the game.
+let quizGame = {
+    displayNext: function () {
+        if (quiz.hasEnded()) {
+            this.displayScore();
+        } else {
+            this.displayQuestion();
+            this.displayChoices();
+            this.displayProgress();
+        }
+    },
+    displayQuestion: function() {
+        this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
+    },
+    displayChoices: function() {
+        let choices = quiz.getCurrentQuestion().choices;
+        for(let i = 0; i < choices.length; i++) {
+            this.populateIdWithHTML("choice" + i, choices[i]);
+            this.guessList("guess" + i, choices[i]);
+        }
+    },
+    displayScore: function() {
+        let gameOverHTML = "<h1>Game Over</h1>";
+        gameOverHTML += "<h2> Your score is: " + quiz.score + "</h2>";
+        this.populateIdWithHTML("quiz", gameOverHTML);
+    },
+    populateIdWithHTML: function(id, text) {
+        let element = document.getElementById(id);
+        element.innerHTML = text;
+    },
+    guessList: function(id, guess) {
+        let button = document.getElementById(id);
+        button.onclick = function() {
+            quiz.guess(guess);
+            quizGame.displayNext();
+        };
+    },
+    displayProgress: function() {
+        let currentQuestionSeries = quiz.currentQuestionIndex + 1;
+        this.populateIdWithHTML("progress", "Question " + currentQuestionSeries + " of " + quiz.questions.length);
+    }
+};
+
+//Create Quiz
+var quiz = new quiz(questions);
+
+//Display Quiz
+quizGame.displayNext();
