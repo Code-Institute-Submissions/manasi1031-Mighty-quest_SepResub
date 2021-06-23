@@ -1,5 +1,8 @@
 /*jshint esversion: 6 */
 
+/* The event listener helps to create collapsible tabs for viewing data
+one section at a time and not flooding page with data.
+See credit offered in the Readme.md for this */
 var tab = document.getElementsByClassName("lesson");
 var x;
 

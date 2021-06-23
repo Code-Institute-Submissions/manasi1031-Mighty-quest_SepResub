@@ -41,13 +41,11 @@
         <button class="quiz-links" onclick="openQuiz(event, 'geography')">Geography</button>
         <button class="quiz-links" onclick="openQuiz(event, 'science')">Science</button>
         <button class="quiz-links" onclick="openQuiz(event, 'maths')">Maths</button>
-        <button class="quiz-links" onclick="openQuiz(event, 'english')">English</button>
     </div>
 
     <div id="geography" class="quiz-data">
         <div class="question-area">
             <p id="progress">Question x of y</p>
-            <br>
             <h3 id="question">Question</h3>
             <p id="choice0">0</p>
             <button id="guess0" class="btn-look">Select this Answer</button>
@@ -59,14 +57,13 @@
     </div>
 
     <div id="science" class="quiz-data">
-        add quiz
+        <p id="progress">Question x of y</p>
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
     </div>
 
     <div id="maths" class="quiz-data">
-        add quiz
-    </div>
-
-    <div id="english" class="quiz-data">
         add quiz
     </div>
 
