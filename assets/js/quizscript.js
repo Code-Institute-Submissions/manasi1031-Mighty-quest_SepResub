@@ -33,3 +33,35 @@ let questions = [
     new question("In a Compass, what does NW stand for?", ["Nowhere", "Not-weary", "North-West"], "North-West"),
 ];
 
+// Quiz prototype for questions, answers and guess
+function quiz(questions) {
+    this.score = 0;
+    this.questions = questions;
+    this.currentQuestionIndex = 0;
+}
+
+function question(text, choices, answer) {
+    this.text = text;
+    this.choices = choices;
+    this.answer = answer;
+}
+
+question.prototype.isCorrectAnswer = function (choice) {
+    return this.answer === choice;
+};
+
+quiz.prototype.guess = function(answer) {
+    if(this.getCurrentQuestion().isCorrectAnswer(answer)) {
+        this.score++;
+    }
+    this.currentQuestionIndex++;
+};
+
+quiz.prototype.getCurrentQuestion = function() {
+    return this.questions[this.currentQuestionIndex];
+};
+
+quiz.prototype.hasEnded = function() {
+    return this.currentQuestionIndex >= this.questions.length;
+};
+
