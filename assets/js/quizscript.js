@@ -18,5 +18,18 @@ function openQuiz(event, subject) {
 }
 
 /**
- * Quiz Data 
+ * Geography Quiz Data Overview
  */
+//Create Questions
+
+let questions = [
+    new question("In a Compass, what does N stand for?", ["Nice", "North", "Nest"], "North"),
+    new question("In a Compass, what does S stand for?", ["Sea", "Sun", "South"], "South"),
+    new question("In a Compass, what does E stand for?", ["East", "Egg", "Elephant"], "East"),
+    new question("In a Compass, what does W stand for?", ["West", "Whale", "Wise"], "West"),
+    new question("In a Compass, what does NE stand for?", ["November", "Never", "North-East"], "North-East"),
+    new question("In a Compass, what does SE stand for?", ["Surrender", "Summer", "South-East"], "South-East"),
+    new question("In a Compass, what does SW stand for?", ["Sweet", "Swish", "South-West"], "South-West"),
+    new question("In a Compass, what does NW stand for?", ["Nowhere", "Not-weary", "North-West"], "North-West"),
+];
+
