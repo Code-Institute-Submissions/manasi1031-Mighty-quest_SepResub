@@ -88,7 +88,62 @@ function openQuiz(event, subject) {
     let resultsBox = document.getElementById('results');
     let submitBtn = document.getElementById('submit');
     // Set of questions
-    let myQuestions 
+    let myQuestions = [
+        {
+            question: "Eating what is important for your health?",
+            answers: {
+                a: "Sugars",
+                b: "Carbohydrates",
+                c: "A balanced diet"
+                },
+            correctAnswer: "c"
+        },
+        {
+            question: "How many food groups are there in a balanced diet?",
+            answers: {
+                a: "Five",
+                b: "Six",
+                c: "Seven"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "What are building blocks for the body because they help it grow and repair itself?",
+            answers: {
+                a: "Carbohydrates",
+                b: "Protein",
+                c: "Fruits and Vegetables",
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "Which products are important because they keep your bones and teeth healthy?",
+            answers: {
+                a: "Dairy Products",
+                b: "Protein",
+                c: "Carbohydrates",
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "What are full of health-boosting vitamins, antioxidants and fibre?",
+            answers: {
+                a: "Dairy Products",
+                b: "Fruits and Vegetables",
+                c: "Carbohydrates",
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "Too much of which food group can damage your teeth or make you gain weight?",
+            answers: {
+                a: "Dairy Products",
+                b: "Fruits and Vegetables",
+                c: "Fats and Sugars",
+            },
+            correctAnswer: "c"
+        },
+    ];
 
     // display quiz 
     buildQuiz();
