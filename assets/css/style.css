@@ -148,7 +148,7 @@ footer {
 
 /* Lessons Page */
 .lesson {
-    background-color: #273FC6;
+    background-color: #7B4F08;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -159,15 +159,11 @@ footer {
     font-size: 15px;
 }
   
-.active, .lesson:hover {
-    background-color: #C227C6;
-}
-  
 .sub-lesson {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #C3BFC3;
+    background-color: #FAE1B8;
 }
 
 .sub-lesson img {
@@ -303,15 +299,14 @@ footer {
 #submit-button {
     font-family: inherit;
     border: 3px double #704848;
-    background-color: #80C40B;
+    background-color: #6A8698;
     font-size: 1.25rem;
     margin-top: 10px;
 }
 
 #submit-button:hover {
-    font-size: 1.45rem;
-    background-color: #6A8698;
-    border: 3px double #704848;
+    background-color: #80C40B;
+    border: 1px solid #704848;
 }
 
 /* 404 Error Page */
