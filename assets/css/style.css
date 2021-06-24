@@ -218,6 +218,29 @@ footer {
     margin: 5px;
 }
 
+.question {
+    padding: 10px;
+    font-weight: bold;
+} 
+
+.answers {
+    padding: 10px;
+    font-style: italic;
+} 
+
+#submit {
+    font-family: inherit;
+    border: 1px double #704848;
+    background-color: #6A8698;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+#submit:hover {
+    background-color: #80C40B;
+    border: 1px solid #704848;
+}
+
 /* Contact Us page */
 #contactus-out {
     height: auto;
@@ -298,7 +321,7 @@ footer {
 
 #submit-button {
     font-family: inherit;
-    border: 3px double #704848;
+    border: 1px double #704848;
     background-color: #6A8698;
     font-size: 1.25rem;
     margin-top: 10px;
