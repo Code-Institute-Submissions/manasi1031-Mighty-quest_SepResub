@@ -22,7 +22,9 @@ function openQuiz(event, subject) {
  */
 
 
-// Science quiz section in local scope
+/** Science quiz section in local scope
+ * This is just give a different visual scope on types of quiz
+ * and to not have the same type per quiz */
 (function(){
     // Set up functions for quiz
     function buildQuiz(){
@@ -37,7 +39,7 @@ function openQuiz(event, subject) {
                     // ...add a checkbox
                     answers.push(
                     `<label>
-                    <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                    <input type="radio" name="question${questionNumber}" value="${letter}">
                     ${letter} :
                     ${currentQuestion.answers[letter]}
                     </label>`
@@ -70,23 +72,23 @@ function openQuiz(event, subject) {
                 if(userAnswer === currentQuestion.correctAnswer){
                 // add to the number of correct answers
                 correctAnswer++;
-                // color the answers green
-                answerBoxes[questionNumber].style.color = 'lightgreen';
                 }
                 // if answer is wrong or blank
-                else {
-                // color the answers red
-                answerBoxes[questionNumber].style.color = 'red';
+                else{
+                    // color the answers red
+                    answerBoxes[questionNumber].style.color = 'red';
                 }
             });
-            // show number of correct answers out of total
-            resultsBox.innerHTML = `${correctAnswer} out of ${myQuestions.length}`;
-        }
+
+        // show number of correct answers out of total
+        resultsBox.innerHTML = `<p>Result is :</p> ${correctAnswer} out of ${myQuestions.length}`;
+    }
 
     // elements for variables
     let quizBox = document.getElementById('quiz');
     let resultsBox = document.getElementById('results');
     let submitBtn = document.getElementById('submit');
+
     // Set of questions
     let myQuestions = [
         {
@@ -150,4 +152,5 @@ function openQuiz(event, subject) {
 
     // Show results on submit
     submitBtn.addEventListener('click', showResults);
+
 })();

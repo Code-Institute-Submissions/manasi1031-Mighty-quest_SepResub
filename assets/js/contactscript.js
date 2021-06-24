@@ -8,10 +8,10 @@ function myFunction(){
   var message = document.getElementsByClassName("large").value;
   // conditional statement to return alert
   if( name ==='' || email ==='' || message ===''){
-    alert("Please fill in all fields...!!!!!!");
+    alert("OOPS!! Please fill in all fields and try sending again...!");
     return false;
   }else{
-    alert("Thank you for your feedback.");
+    alert("Thank you for emailing me, I will respond as soon as I can!");
     return true;
   }
 }
