@@ -49,15 +49,64 @@
         		<i class="fa fa-repeat">Repeat</i>
         	</div>
         </section>
-
+        <!--Add cards in list format-->
         <ul class="deck" id="card-deck">
-            <!--Add cards in list format-->
+            <ul class="deck" id="card-deck">
+                <li class="card" type="apple">
+                    <i class="fas fa-apple-alt"></i>
+                </li>
+                <li class="card" type="carrot">
+                    <i class="fas fa-carrot"></i>
+                </li>
+                <li class="card match" type="lemon">
+                    <i class="fas fa-lemon"></i>
+                </li>
+                <li class="card" type="egg">
+                    <i class="fas fa-egg"></i>
+                </li>
+                <li class="card" type="cheese">
+                    <i class="fas fa-cheese"></i>
+                </li>
+                <li class="card match" type="lemon">
+                    <i class="fas fa-lemon"></i>
+                </li>
+                <li class="card" type="fish">
+                    <i class="fas fa-fish"></i>
+                </li>
+                <li class="card" type="pizza">
+                    <i class="fas fa-pizza-slice"></i>
+                </li>
+                <li class="card" type="apple">
+                    <i class="fas fa-apple-alt"></i>
+                </li>
+                <li class="card" type="pepper">
+                    <i class="fas fa-pepper-hot"></i>
+                </li>
+                <li class="card" type="fish">
+                    <i class="fas fa-fish"></i>
+                </li>
+                <li class="card" type="pepper">
+                    <i class="fas fa-pepper-hot"></i>
+                </li>
+                <li class="card open show" type="egg">
+                    <i class="fas fa-egg"></i>
+                </li>
+                <li class="card" type="pizza">
+                    <i class="fas fa-pizza-slice"></i>
+                </li>
+                <li class="card" type="carrot">
+                    <i class="fas fa-carrot"></i>
+                </li>
+                <li class="card" type="cheese">
+                    <i class="fas fa-cheese"></i>
+                </li>
+            </ul>
         </ul>
-
+        <!--Pop up message at end of game-->
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations</h2>
-                <a class="close" href=# >×</a>
+                <a class="close" href="#">×</a>
                 <div class="content-1">
                     Congratulations you're a winner!!!
                 </div>
@@ -66,6 +115,7 @@
                     <p>in <span id=totalTime> </span> </p>
                     <p>Rating:  <span id=starRating></span></p>
                 </div>
+                <!--Play again option-->
                 <button id="play-again"onclick="playAgain()">
                     Play again</a>
                 </button>

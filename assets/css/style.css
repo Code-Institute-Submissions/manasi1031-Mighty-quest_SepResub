@@ -241,6 +241,82 @@ footer {
     border: 1px solid #704848;
 }
 
+/* Memory Game Page*/
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+}
+
+/* Styles for the deck of cards */
+ .deck {
+	width: 85%;
+	background: white;
+	padding: 1rem;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 3em;
+}
+
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #C47E0C;
+	font-size: 0;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.deck .card.open {
+	transform: rotateY(0);
+	background: #27B7C6;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 1s;
+}
+
+.deck .card.show {
+	font-size: 33px;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #0BC421;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 1s;
+}
+
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #C63727;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
 /* Contact Us page */
 #contactus-out {
     height: auto;
