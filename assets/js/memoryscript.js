@@ -133,7 +133,7 @@ function enable(){
     });
 }
 
-// Ccount player's moves
+// Count player's moves
 function moveCounter(){
     moves++;
     counter.innerHTML = moves;
@@ -164,3 +164,46 @@ function startTimer(){
         }
     },1000);
 }
+
+// Congratulations when all cards match, show modal and moves and time
+function congratulations(){
+    if (matchedCard.length == 16){
+        clearInterval(interval);
+        finalTime = timer.innerHTML;
+
+        // show congratulations modal
+        modal.classList.add("show");
+
+        //showing move, time on modal
+        document.getElementById("finalMove").innerHTML = moves;
+        document.getElementById("totalTime").innerHTML = finalTime;
+
+        //closeicon on modal
+        closeModal();
+    };
+}
+
+
+// Close icon on congratulations modal
+function closeModal(){
+    closeicon.addEventListener("click", function(e){
+        modal.classList.remove("show");
+        startGame();
+    });
+}
+
+
+// For user to play Again 
+function playAgain(){
+    modal.classList.remove("show");
+    startGame();
+}
+
+
+// loop to add event listeners to each card
+for (var i = 0; i < cards.length; i++){
+    card = cards[i];
+    card.addEventListener("click", displayCard);
+    card.addEventListener("click", cardOpen);
+    card.addEventListener("click",congratulations);
+};
