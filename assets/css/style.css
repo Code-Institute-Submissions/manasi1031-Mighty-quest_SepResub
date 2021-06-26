@@ -47,20 +47,19 @@ h1, h2, h3, #menu {
 
 #menu {
     margin-bottom: 20px;
-    float: right;
+    width: 100%;
+    overflow: auto;
 }
 
 #menu a {
-    margin-right: 10px;
+    padding: 5px;
+    width: 18%;
+    text-align: center;
+    float: left;
 }
 
 #menu a:hover {
-    font-size: 1.25em;
     color: #77335D;
-}
-
-.mobile-menu {
-    display: none;
 }
 
 /* Hero Image Stylying */
@@ -74,7 +73,7 @@ h1, h2, h3, #menu {
     background: url(../images/quest-hero-image.jpeg) no-repeat center center;
     height: 800px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* Quick Bottom Links */
@@ -478,6 +477,7 @@ footer {
     height: 800px;
     width: 100%;
     background-size: cover;
+    opacity: 0.7;
 }
 
 #contactus-cover {
@@ -532,7 +532,7 @@ footer {
 
 #contactus-form li label{
     font-weight: bold;
-    color: inherit;
+    color: #345579
 }
 
 #contactus-form li input {
@@ -604,8 +604,8 @@ footer {
 
 /** Media queries MEMORY GAME ONLY**/
 /* For Mobiles */
-@media (max-width: 320px) {
-	.deck {
+@media screen and (max-width: 320px) {
+    .deck {
 		width: 85%;
 	}
 
@@ -615,9 +615,9 @@ footer {
 	}
 }
 
-
+/** Media queries MEMORY GAME ONLY**/
 /* For Tablets and larger screens */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.container {
 		font-size: 22px;
 	}
@@ -635,4 +635,25 @@ footer {
 	.popup {
 		width: 60%;
 	}
+}
+
+/* media queries - General for all other pages */
+/* for larger to medium-large screens size from 1200 px wide and down */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* media queries - General for all other pages */
+/* for medium to mobile screens size from 750 px wide and down */
+@media screen and (max-width: 750px) {
+    #menu a {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+
+    #contactus-cover {
+        top: 400px;
+    }
 }
