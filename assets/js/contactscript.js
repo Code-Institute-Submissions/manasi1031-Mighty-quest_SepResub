@@ -9,9 +9,12 @@ function myFunction(){
   // conditional statement to return alert
   if( name ==='' || email ==='' || message ===''){
     alert("OOPS!! Please fill in all fields and try sending again...!");
+    console.log('Message submit failure');
     return false;
   }else{
     alert("Thank you for emailing me, I will respond as soon as I can!");
+    console.log('Message submit success');
     return true;
   }
 }
+
