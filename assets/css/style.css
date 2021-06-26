@@ -283,6 +283,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 0 3em;
+    box-sizing: border-box;
 }
 
 .deck .card {
@@ -297,6 +298,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    box-sizing: border-box;
 }
 
 .deck .card.open {
@@ -407,10 +409,6 @@ footer {
 .show {
 	visibility: visible !important;
 	opacity: 100 !important;
-}
-
-#starRating li {
-	display: inline-block;
 }
 
 #play-again {
@@ -657,13 +655,7 @@ footer {
 }
 
 /* media queries - General for all other pages */
-/* for larger to medium-large screens size from 1200 px wide and down */
-@media screen and (max-width: 1200px) {
-    
-}
-
-/* media queries - General for all other pages */
-/* for medium to mobile screens size from 750 px wide and down */
+/* for medium to mobile screens size from 750px wide and down */
 @media screen and (max-width: 750px) {
     #menu a {
         float: none;
