@@ -171,18 +171,32 @@ footer {
 }
 
 .sub-lesson img {
-    width: auto;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .image-box {
     float: left;
-    max-width: 45%;
+    width: 47%;
 }
 
 .text-content {
     float: right;
-    max-width: 45%;
+    width: 47%;
+}
+
+.text-content p {
+    margin-top: 0px;
+}
+
+.text-content iframe {
+    height: auto;
+    width: 100%;
+}
+
+.quick-click {
+    width: 50% !important;
 }
 
 /* Quiz page */
@@ -662,6 +676,14 @@ footer {
         font-size: inherit;
     }
 
+    .image-box, .text-content {
+        float: none;
+        width: 100%;
+    }
+
+    .quick-click {
+        width: 100% !important;
+    }
     #contactus-cover {
         top: 400px;
     }
