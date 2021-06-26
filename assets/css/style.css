@@ -31,6 +31,7 @@ h1, h2, h3, #menu {
     color: #345579;
     letter-spacing: 5px;
     font-size: 1.5em;
+    text-align: center;
 }
 
 #logo {
@@ -48,6 +49,7 @@ h1, h2, h3, #menu {
 #menu {
     margin-bottom: 20px;
     width: 100%;
+    font-size: inherit;
     overflow: auto;
 }
 
@@ -77,16 +79,20 @@ h1, h2, h3, #menu {
 }
 
 /* Quick Bottom Links */
+#bottom-container {
+    width: 100%;
+    overflow: auto;
+}
+
 .bottom-link {
-    display: inline-block;
     border-radius: 4px;
     background-color: #80C40B;
     border: none;
     color: #14202E;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 2vw;
     padding: 10px;
-    width: 200px;
+    width: 22%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -94,7 +100,6 @@ h1, h2, h3, #menu {
 
 .bottom-link span {
     cursor: pointer;
-    display: inline-block;
     position: relative;
     transition: 0.5s;
   }
@@ -652,6 +657,10 @@ footer {
         width: 100%;
     }
 
+    .bottom-link {
+        width: 100%;
+        font-size: inherit;
+    }
 
     #contactus-cover {
         top: 400px;
