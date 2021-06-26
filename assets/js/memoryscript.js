@@ -40,3 +40,39 @@ function shuffle(array) {
 
 // shuffles cards when page is refreshed / loads
 document.body.onload = startGame();
+
+// function to start a new game
+function startGame(){
+ 
+    // empty the openCards array
+    openedCards = [];
+
+    // shuffle deck
+    cards = shuffle(cards);
+    // remove all exisiting classes from each card
+    for (var i = 0; i < cards.length; i++){
+        deck.innerHTML = "";
+        [].forEach.call(cards, function(item) {
+            deck.appendChild(item);
+        });
+        cards[i].classList.remove("show", "open", "match", "disabled");
+    }
+    // reset moves
+    moves = 0;
+    counter.innerHTML = moves;
+    }
+    //reset timer
+    second = 0;
+    minute = 0; 
+    hour = 0;
+    var timer = document.querySelector(".timer");
+    timer.innerHTML = "0 mins 0 secs";
+    clearInterval(interval);
+
+
+// Toggles open and show class to display cards
+var displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+};
