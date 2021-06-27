@@ -210,61 +210,26 @@ footer {
 .quiz-tab {
     overflow: hidden;
     background: #C227C6;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
 
 .quiz-tab button {
     background: inherit;
-    float: left;
     transition: 0.2s;
     border: 1px solid;
-    width: auto;
+    width: 33.33%;
     padding: 15px;
     margin: 0, 10px;
-    font-size: 1.2rem;
+    font-size: 2vw;
 }
 
-.quiz-data {
-    display: none;
-    background: #C3BFC3;
-    padding: 10px;
-    border: 1px solid #67442E;
-    font: #67442E;
-}
 
-.btn-look {
-    border-radius: 4px;
-    background-color: #80C40B;
-    border: none;
-    color: #14202E;
-    text-align: center;
-    font-size: 1em;
-    padding: 10px;
-    width: 200px;
-    margin: 5px;
-}
-
-.question, #results {
-    padding: 10px;
-    font-weight: bold;
-} 
-
-.answers {
-    padding: 10px;
-    font-style: italic;
-} 
-
-#submit {
-    font-family: inherit;
-    border: 1px double #704848;
-    background-color: #6A8698;
-    font-size: 1.25rem;
-    margin-top: 10px;
-}
-
-#submit:hover {
-    background-color: #80C40B;
-    border: 1px solid #704848;
-}
 
 /* Memory Game Page*/
 .container {
@@ -683,6 +648,11 @@ footer {
     .quick-click {
         width: 100% !important;
     }
+
+    .quiz-tab button {
+        font-size: 1rem;
+    }
+
     #contactus-cover {
         top: 400px;
     }
