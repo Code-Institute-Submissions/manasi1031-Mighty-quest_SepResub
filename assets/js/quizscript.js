@@ -17,9 +17,4 @@ function openQuiz(event, subject) {
     event.currentTarget.className += " active";
 }
 
-/**
- * Geography Quiz Data Overview - BLANK
- */
-
-
-/** Science quiz section in local scope */
+/** Science quiz section */
