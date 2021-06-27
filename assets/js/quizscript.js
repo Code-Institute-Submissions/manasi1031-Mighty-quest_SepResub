@@ -82,3 +82,46 @@ let questions = [
             ]
         }
 ];
+
+//Declare variables for Science Quiz
+let start_btn = document.querySelector(".start_btn button");
+let info_box = document.querySelector(".info_box");
+let exit_btn = info_box.querySelector(".buttons .quit");
+let continue_btn = info_box.querySelector(".buttons .restart");
+let quiz_box = document.querySelector(".quiz_box");
+let result_box = document.querySelector(".result_box");
+let option_list = document.querySelector(".option_list");
+let time_line = document.querySelector("header .time_line");
+let timeText = document.querySelector(".timer .time_left_txt");
+let timeCount = document.querySelector(".timer .timer_sec");
+
+// if startQuiz button is clicked
+start_btn.onclick
+
+// if exitQuiz button clicked
+exit_btn.onclick
+
+// if continueQuiz button clicked
+continue_btn.onclick
+
+// if restartQuiz button clicked
+restart_quiz.onclick 
+
+// if quitQuiz button clicked
+quit_quiz.onclick
+
+// if Next Question button clicked
+next_btn.onclick
+
+// getting questions and options from array
+function showQuestions(index)
+
+//if user clicked on option
+function optionSelected(answer)
+
+// Show Result function
+function showResult()
+
+// Function to start Quiz timer
+function startTimer(time)
+
