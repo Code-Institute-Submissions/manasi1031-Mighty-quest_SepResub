@@ -54,10 +54,63 @@
         </div>
     </div>
 
-    <div id="science" class="quiz-data">
-        <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
+    <div id="science">
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+        <!-- Instruction box for quiz -->
+        <div class="info_box">
+            <div class="info-title"><span>Rules of the Quiz</span></div>
+            <div class="info-list">
+                <div class="info">You will have only <span>25 seconds</span> per each question.</div>
+                <div class="info">Once you select your answer, it cannot be changed.</div>
+                <div class="info">You cannot select any option once the time is up.</div>
+                <div class="info">You will get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Replay Quiz</button>
+            </div>
+        </div>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Science Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">25</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="question_text">
+                    <!-- Inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Inserted options from JavaScript -->
+                </div>
+            </section>
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_question">
+                    <!-- Inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You have completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
     </div>
 
     <div id="maths" class="quiz-data">
