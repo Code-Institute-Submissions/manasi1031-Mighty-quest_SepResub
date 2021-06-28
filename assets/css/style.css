@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #67442E;
+    color: #345579;
     background-color: #C6EFF4;
     text-align: justify;
 }
@@ -21,6 +21,11 @@ a:visited {
 
 a.active {
     background: none;
+}
+
+hr {
+    border-top: 1px solid white;
+    padding: 10px 0 10px 0;    
 }
 
 /* Heading and navigation menu*/
@@ -36,7 +41,7 @@ h1, h2, h3, #menu {
 
 #logo {
     width: 100%;
-    height: auto;
+    height: 5vw;
     font-size: 5vw;
     margin-top: 20px;
     text-align: center;
@@ -44,6 +49,7 @@ h1, h2, h3, #menu {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px 0 20px 0;
 }
 
 #menu {
@@ -69,6 +75,8 @@ h1, h2, h3, #menu {
     height: auto;
     width: 100%;
     overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 #hero-image {
@@ -143,7 +151,7 @@ footer {
     align-items: center;
     list-style: none;
     width: 100%;
-    padding-left: 0px;
+    margin-bottom: 20px;
 
 }
 
@@ -223,12 +231,11 @@ footer {
     background: inherit;
     transition: 0.2s;
     border: 1px solid;
-    width: 33.33%;
+    width: 25%;
     padding: 15px;
     margin: 0 10px;
     font-size: 2vw;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .quiz-data {
