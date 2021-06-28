@@ -81,7 +81,7 @@ h1, h2, h3, #menu {
 
 #hero-image {
     background: url(../images/quest-hero-image.jpeg) no-repeat center center;
-    height: 800px;
+    height: 500px;
     width: 100%;
     background-size: cover;
 }
@@ -230,7 +230,6 @@ footer {
 .quiz-tab button {
     background: inherit;
     transition: 0.2s;
-    border: 1px solid;
     width: 25%;
     padding: 15px;
     margin: 0 10px;
@@ -264,6 +263,7 @@ footer {
     opacity: 1;
     z-index: 5;
     transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
 }
 .start_btn button{
     font-size: 2vw;
@@ -514,7 +514,7 @@ section .option_list .option .icon{
     border: 1px solid #229EAB;
     line-height: 10px;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto;
     transform: scale(0.95);
     transition: all 0.3s ease;
 }
@@ -1006,6 +1006,10 @@ section .option_list .option .icon{
         float: none;
         display: block;
         width: 100%;
+    }
+
+    #bottom-container {
+        flex-direction: column;
     }
 
     .bottom-link {

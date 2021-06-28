@@ -42,8 +42,7 @@ function shuffle(array) {
 document.body.onload = startGame();
 
 // function to start a new game
-function startGame(){
- 
+function startGame() {
     // empty the openCards array
     openedCards = [];
 

@@ -105,13 +105,13 @@ let timeCount = document.querySelector(".timer .timer_sec");
 start_btn.onclick = ()=>{
     //show info box
     info_box.classList.add("activeInfo"); 
-}
+};
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
     //hide info box
     info_box.classList.remove("activeInfo"); 
-}
+};
 
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
@@ -122,7 +122,7 @@ continue_btn.onclick = ()=>{
     questionCounter(1); 
     startTimer(25); 
     startTimerLine(0); 
-}
+};
 
 let timeValue =  25;
 let question_count = 0;
@@ -154,20 +154,20 @@ restart_quiz.onclick = ()=>{
     startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
-}
+};
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
     //reload the current window
     window.location.reload(); 
-}
+};
 
 let next_btn = document.querySelector(".footer .next_btn");
 let bottom_ques_counter = document.querySelector(".footer .total_question");
 
 // if Next Question button clicked
 next_btn.onclick = ()=>{
-    if(question_count < questions.length - 1){ 
+    if (question_count < questions.length - 1){ 
         question_count++; //increment the question_count value
         question_numb++; //increment the question_numb value
         showQuestions(question_count); //calling showQuestions function
@@ -183,7 +183,7 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         showResult(); //calling showResult function
     }
-}
+};
 
 // getting questions and options from array
 function showQuestions(index) {
@@ -191,20 +191,21 @@ function showQuestions(index) {
 
     //creating a new span and div tag for question and option and passing the value using array index
     let question_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
-    let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+    let option_tag = 
+        '<div class="option"><span>'+ questions[index].options[0] +'</span></div>' + 
+        '<div class="option"><span>'+ questions[index].options[1] +'</span></div>' + 
+        '<div class="option"><span>'+ questions[index].options[2] +'</span></div>' + 
+        '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
     question_text.innerHTML = question_tag; //adding new span tag inside question_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
     
     let option = option_list.querySelectorAll(".option");
-
     // set onclick attribute to all available options
     for(i=0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
+
 // creating the new div tags for icons
 let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
