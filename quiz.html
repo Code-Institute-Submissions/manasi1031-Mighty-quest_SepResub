@@ -29,21 +29,26 @@
         </div>
     </header>
 
-    <!--Quiz section-->
-    <hr>
-    <h2>Quiz</h2>
-    <hr>
-    <p>Please click on the relevant subject to play the quiz and enjoy.</p>
-    <hr>
-    <div class="quiz-tab">
-        <button class="quiz-links" onclick="openQuiz(event, 'science')">Science</button>
-        <button class="quiz-links" onclick="openQuiz(event, 'geography')">Geography</button>
-        <button class="quiz-links" onclick="openQuiz(event, 'maths')">Maths</button>
-    </div>
-    
+    <!--Intro Quiz section with collapsible tabs-->
+    <section>
+        <hr>
+        <h2>Quiz</h2>
+        <hr>
+        <p id="center">Please click on the relevant subject to play the quiz and enjoy.</p>
+        <hr>
+        <div class="quiz-tab">
+            <button class="quiz-links" onclick="openQuiz(event, 'science')">Science</button>
+            <button class="quiz-links" onclick="openQuiz(event, 'geography')">Geography</button>
+            <button class="quiz-links" onclick="openQuiz(event, 'maths')">Maths</button>
+        </div>
+    </section>
+
+    <!--Science Quiz section-->
     <div id="science" class="quiz-data">
         <!-- start Quiz button -->
-        <div class="start_btn"><button>Start Science Quiz</button></div>
+        <div class="start_btn">
+            <button>Start Science Quiz</button>
+        </div>
         <!-- Instruction box for quiz -->
         <div class="info_box">
             <div class="info-title"><span>Rules of the Quiz</span></div>
@@ -101,7 +106,7 @@
     </div>
 
     <div id="geography" class="quiz-data">
-        to add
+        add quiz
     </div>
     
     <div id="maths" class="quiz-data">
@@ -150,9 +155,9 @@
         </ul>
     </footer>
     
-    <!--Javascript page link-->
+    <!--General and Science Quiz Javascript page link-->
     <script src="assets/js/quizscript.js"></script>
-    
+
     <!--Fontawesome script-->
     <script src="https://kit.fontawesome.com/22f8691744.js" crossorigin="anonymous"></script>
     

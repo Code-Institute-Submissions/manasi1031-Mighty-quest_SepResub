@@ -318,6 +318,11 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 - While I found it extremely difficult to make a memory game from scratch, I decided to use a step by step approach from the below tutorial link and modified it to suit my page:
     https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
 
+- I have referenced the below links to create the Science Quiz but obviously modified to my requirements:
+    https://www.codemahal.com/video/javascript-quiz-tutorial/#:~:text=JavaScript%20quiz%20tutorial.%201%20Step%201%20%E2%80%93%20Setting,a%20function%20to%20display%20the%20questions.%20More%20items 
+    and 
+    https://www.wikihow.com/Make-a-Basic-JavaScript-Quiz 
+
 
 #### Media
 

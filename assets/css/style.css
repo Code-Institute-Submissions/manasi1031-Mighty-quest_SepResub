@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Lato&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Lato&display=swap');
 
 /* General */
 * {
@@ -225,18 +225,28 @@ footer {
     border: 1px solid;
     width: 33.33%;
     padding: 15px;
-    margin: 0, 10px;
+    margin: 0 10px;
     font-size: 2vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quiz-data {
+    display: none;
 }
 
 /* Science Quiz section */
-#science {
+#science, #geography, #maths {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: auto;
+    height: 450px;
 }
 
-.start_btn, .info_box, .quiz_box, .result_box{
+.start_btn, 
+.info_box, 
+.quiz_box, 
+.result_box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -246,18 +256,16 @@ footer {
 .info_box.activeInfo, .quiz_box.activeQuiz, .result_box.activeResult{
     opacity: 1;
     z-index: 5;
-    pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
 .start_btn button{
-    font-size: 25px;
-    font-weight: 500;
-    color: black;
+    font-size: 2vw;
+    color: #14202E;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: white;
+    background: #80C40B;
     cursor: pointer;
 }
 
@@ -294,7 +302,7 @@ footer {
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: black;
+    color: #14202E;
 }
 
 .info_box .buttons{
@@ -340,7 +348,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
 }
 
 .quiz_box header .title{
@@ -349,9 +356,9 @@ footer {
 }
 
 .quiz_box header .timer{
-    color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: #14202E;
+    background: #C6EFF4;
+    border: 1px solid #229EAB;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -372,12 +379,12 @@ footer {
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: #fff;
+    color: #14202E;
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
+    background: #C6EFF4;
+    border: 1px solid #229EAB;
     user-select: none;
 }
 
@@ -386,7 +393,7 @@ footer {
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #007bff;
+    background: #C6EFF4;
 }
 
 section .question_text{
@@ -430,7 +437,7 @@ section .option_list .option.correct{
 }
 
 section .option_list .option.incorrect{
-    color: #721c24;
+    color: #C63727;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
@@ -452,15 +459,15 @@ section .option_list .option .icon{
 }
 
 .option_list .option .icon.tick{
-    color: #23903c;
-    border-color: #23903c;
+    color: #155724;
+    border-color: #155724;
     background: #d4edda;
 }
 
 .option_list .option .icon.cross{
-    color: #a42834;
+    color: #C63727;
     background: #f8d7da;
-    border-color: #a42834;
+    border-color: #C63727;
 }
 
 .footer{
@@ -494,10 +501,10 @@ section .option_list .option .icon{
     cursor: pointer;
     border: none;
     outline: none;
-    color: #fff;
+    color: #155724;
     border-radius: 5px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background: #C6EFF4;
+    border: 1px solid #229EAB;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -511,7 +518,6 @@ section .option_list .option .icon{
 
 .footer button.show{
     opacity: 1;
-    pointer-events: auto;
     transform: scale(1);
 }
 
@@ -638,7 +644,7 @@ section .option_list .option .icon{
 	background: #27B7C6;
 	cursor: default;
 	animation-name: flipInY;
-	-webkit-backface-visibility: visible !important;
+	visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: 1s;
 }
@@ -652,14 +658,14 @@ section .option_list .option .icon{
 	background: #0BC421;
 	font-size: 33px;
 	animation-name: rubberBand;
-	-webkit-backface-visibility: visible !important;
+	visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: 1s;
 }
 
 .deck .card.unmatched {
 	animation-name: pulse;
-	-webkit-backface-visibility: visible !important;
+	visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 	background: #C63727;
@@ -740,7 +746,7 @@ section .option_list .option .icon{
 
 .show {
 	visibility: visible !important;
-	opacity: 100 !important;
+	opacity: 1 !important;
 }
 
 #play-again {
