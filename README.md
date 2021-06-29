@@ -226,10 +226,26 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
 #### User Testing Stories:
 
-TO ADD
+- I have created a main home page and have information stored structurally in order of home page There is information about the website in a nutshell. This covers the below user story:
 
+    _“As a first time visitor, I want to ascertain the purpose of website.”_
 
+- I have created a website that has a lessons tab for subjects, quiz tab for quiz and memory game tab for playing game. Each page also has a bottom link (except memory page) that kids can move on directly to instead of going back up to the menu navigation. This covers the below user stories:
 
+    _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
+    _“I want to be able to easily navigate through the website.”_
+    
+- The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz that is based on these lessons. This covers the below user stories:
+
+    _“As a first time visitor, I want to easily access relevant information.”_
+
+- The site has been made responsive to be viewed on laptop, tablets and mobiles. This covers the below user story:
+
+    _“As a first time visitor, I want to be able to access the site from all device types.”_
+
+- I have created a contact us form section for any questions or feedback or comments that want to be shared. I have not created a dump site to record the data at this stage but I have put in a basic Javascript alert that advises the sender message has been sent. This covers the below user story:
+
+    _“As a returning visitor, I want to contact the website to give any feedback or comments.”_
 
 #### Code Validation:
 
@@ -318,7 +334,7 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 - While I found it extremely difficult to make a memory game from scratch, I decided to use a step by step approach from the below tutorial link and modified it to suit my page:
     https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
 
-- I have referenced the below links to create the Science Quiz but obviously modified to my requirements:
+- I have used the below links to as reference material to create the Science Quiz but obviously modified to my requirements:
     https://www.codemahal.com/video/javascript-quiz-tutorial/#:~:text=JavaScript%20quiz%20tutorial.%201%20Step%201%20%E2%80%93%20Setting,a%20function%20to%20display%20the%20questions.%20More%20items 
     and 
     https://www.wikihow.com/Make-a-Basic-JavaScript-Quiz 

@@ -117,7 +117,7 @@ h1, h2, h3, #menu {
     cursor: pointer;
     position: relative;
     transition: 0.5s;
-  }
+}
   
 .bottom-link span:after {
     content: '\00bb';
@@ -126,25 +126,25 @@ h1, h2, h3, #menu {
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
 .bottom-link:hover span {
     padding-right: 25px;
-  }
+}
   
 .bottom-link:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
 /* Footer */
 footer {
     position: static;
     width: 100%;
     height: auto;
-  }
+}
 
-  .social-media {
+.social-media {
     text-align: justify;
     display: inline-flex;
     justify-content: center;
@@ -152,7 +152,6 @@ footer {
     list-style: none;
     width: 100%;
     margin-bottom: 20px;
-
 }
 
 .social-media li {
