@@ -241,6 +241,7 @@ footer {
 
 .quiz-data {
     display: none;
+    position: relative;
 }
 
 /* Science Quiz section */
@@ -268,7 +269,7 @@ footer {
     pointer-events: auto;
 }
 .start_btn button{
-    font-size: 2vw;
+    font-size: 25px;
     color: #14202E;
     padding: 15px 30px;
     outline: none;
@@ -279,7 +280,7 @@ footer {
 }
 
 .info_box{
-    width: 540px;
+    width: auto;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -338,7 +339,7 @@ footer {
 }
 
 .quiz_box{
-    width: 550px;
+    width: auto;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -535,7 +536,7 @@ section .option_list .option .icon{
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 450px;
+    width: auto;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -1034,5 +1035,25 @@ section .option_list .option .icon{
 
     #contactus-cover {
         top: 400px;
+    }
+
+    .start_btn button{
+        font-size: 20px;
+    }
+
+    .info_box .info-list .info {
+        font-size: 12px;
+    }
+
+    section .question_text {
+        font-size: 17px;
+    }
+
+    section .option_list .option .footer button {
+        font-size: 15px;
+    } 
+
+    .footer button {
+        font-size: 12px;
     }
 }
