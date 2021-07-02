@@ -24,7 +24,7 @@ a.active {
 }
 
 hr {
-    border-top: 1px solid white;
+    border-top: 1px solid grey;
     padding: 10px 0 10px 0;    
 }
 
@@ -853,7 +853,7 @@ section .option_list .option .icon{
     width: 100%;
     height: auto;
 
-    background-color: rgba(197, 208, 215, 0.7);
+    background-color: rgba(238 243 247 / 70%);
     color: #0F0C00;
 
     top: 350px;
