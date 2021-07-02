@@ -319,6 +319,8 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 
 - The material for lessons and quiz is taken from my daughters schools - Bonygate Primary School. I have checked with her class teacher and these are not copyrighted and can be used as per my choice.
 
+- The maths sheets for download have been taken from - https://www.activityshelter.com/year-2-math-worksheets-free/
+
 - To complete this project I used Code Institute student template: [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 - I have worked on this project following a step-by-step approach from the Love Maths project from Code Institute to avoid missing any steps.
