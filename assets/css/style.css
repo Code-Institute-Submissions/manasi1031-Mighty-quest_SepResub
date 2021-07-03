@@ -985,7 +985,7 @@ section .option_list .option .icon{
 /* For Tablets and larger screens */
 @media screen and (min-width: 768px) {
 	.container {
-		font-size: 22px;
+		font-size: inherit;
 	}
 
 	.deck {
