@@ -162,8 +162,9 @@ footer {
 }
 
 .social-media i {
-    margin: 1%;
-    padding: 1%;
+    margin: 2%;
+    padding: 2%;
+    font-size: 200%;
     list-style-type: none;
 }
 
@@ -210,6 +211,7 @@ footer {
 .text-content iframe {
     height: auto;
     width: 100%;
+    padding: 10px 0 10px 0;
 }
 
 .quick-click {

@@ -18,6 +18,7 @@ function openQuiz(event, subject) {
 }
 
 /** Science quiz section */
+
 /** Science section questions */
 // creating an array and passing the number, questions, options, and answers
 let questions = [

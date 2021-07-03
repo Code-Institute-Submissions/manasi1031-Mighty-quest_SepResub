@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+// Step by step approach taken from a website and credit given in README.md
+
 // cards array holds all cards
 let card = document.getElementsByClassName("card");
 let cards = [...card];
@@ -18,7 +20,7 @@ let matchedCard = document.getElementsByClassName("match");
 let closeicon = document.querySelector(".close");
 
 // declare popup modal
-let modal = document.getElementById("popup1")
+let modal = document.getElementById("popup1");
 
 // array for opened cards
 let openedCards = [];
@@ -36,7 +38,7 @@ function shuffle(array) {
     }
 
     return array;
-};
+}
 
 // shuffles cards when page is refreshed / loads
 document.body.onload = startGame();
@@ -59,15 +61,15 @@ function startGame() {
     // reset moves
     moves = 0;
     counter.innerHTML = moves;
-    }
-    //reset timer
-    second = 0;
-    minute = 0; 
-    hour = 0;
-    var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
-    clearInterval(interval);
-
+}
+   
+//reset timer
+second = 0;
+minute = 0; 
+hour = 0;
+var timer = document.querySelector(".timer");
+timer.innerHTML = "0 mins 0 secs";
+clearInterval(interval);
 
 // Toggles open and show class to display cards
 var displayCard = function (){
@@ -89,7 +91,7 @@ function cardOpen() {
             unmatched();
         }
     }
-};
+}
 
 // When cards match
 function matched(){
@@ -99,7 +101,6 @@ function matched(){
     openedCards[1].classList.remove("show", "open", "no-event");
     openedCards = [];
 }
-
 
 // When cards don't match
 function unmatched(){
@@ -120,7 +121,6 @@ function disable(){
         card.classList.add('disabled');
     });
 }
-
 
 // Enable cards and disable matched cards
 function enable(){
@@ -179,7 +179,7 @@ function congratulations(){
 
         //closeicon on modal
         closeModal();
-    };
+    }
 }
 
 
@@ -205,4 +205,4 @@ for (var i = 0; i < cards.length; i++){
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
     card.addEventListener("click",congratulations);
-};
+}
