@@ -299,7 +299,7 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 - From branch select master and then folder as root.
 - Click save and page was deployed after auto-refresh.
    
-> Your site is published at ~~~
+> Your site is published at https://manasi1031.github.io/Mighty-quest/
 
 #### To run locally:
 - Log in to GitHub and click on repository to download ([Mighty Quest]())
