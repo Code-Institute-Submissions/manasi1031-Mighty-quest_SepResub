@@ -83,7 +83,7 @@ h1, h2, h3, #menu {
     background: url(../images/quest-hero-image.jpeg) no-repeat center center;
     height: 500px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* About us section */
@@ -925,26 +925,18 @@ section .option_list .option .icon{
 /* 404 Error Page */
 #error-out {
     width: 100%;
-    overflow: hidden;
-    position: absolute;
-    height: 600px;
+    height: auto;
 }
 #error-text {
     letter-spacing: 2px;
     text-align: center;
 
     width: auto;
-    height: 100%;
+    height: auto;
 
     padding: 10px;
-    
-    background-color: rgba(197,214,201,0.6);
-    color: inherit;
 
-    top: auto;
-    right: auto;
-    
-    position: relative;
+    color: inherit;
 }
 
 #error-text h2 {
@@ -958,7 +950,7 @@ section .option_list .option .icon{
 
 #error-text img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 /** Media queries MEMORY GAME ONLY**/
