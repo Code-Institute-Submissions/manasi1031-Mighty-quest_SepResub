@@ -924,21 +924,11 @@ section .option_list .option .icon{
 
 /* 404 Error Page */
 #error-out {
-    height: 660px;
     width: 100%;
     overflow: hidden;
-
-    position: relative;
-    margin-top: 250px;
+    position: absolute;
+    height: 600px;
 }
-
-#error-image {
-    background: url(../images/schoolboard.jpg) no-repeat center center;
-    height: 660px;
-    width: 100%;
-    background-size: 100%;
-}
-
 #error-text {
     letter-spacing: 2px;
     text-align: center;
@@ -964,6 +954,11 @@ section .option_list .option .icon{
 
 #error-text p {
     height: 75px;
+}
+
+#error-text img {
+    height: auto;
+    max-width: 100%;
 }
 
 /** Media queries MEMORY GAME ONLY**/
