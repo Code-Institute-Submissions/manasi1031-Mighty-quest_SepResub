@@ -10,8 +10,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #345579;
-    background-color: #C6EFF4;
+    color: #513832;
+    background-color: #B4DBD4;
     text-align: justify;
 }
 
@@ -38,7 +38,7 @@ h1, h2, h3, #menu {
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    color: #345579;
+    color: #3A1E34;
     letter-spacing: 5px;
     font-size: 1.5em;
     text-align: center;
@@ -169,6 +169,22 @@ footer {
     width: 50% !important;
 }
 
+/* Lesson Image Stylying */
+#lesson-out {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#lesson-image {
+    background: url(../images/dora-lesson-page.jpg) no-repeat center center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
 /* Quiz page */
 .quiz-tab {
     overflow: hidden;
@@ -198,7 +214,7 @@ footer {
     text-align: center;
 }
 
-/* Science Quiz section */
+/* Quiz section */
 #science, #geography, #maths {
     margin: 0;
     padding: 0;
@@ -206,6 +222,23 @@ footer {
     height: 450px;
 }
 
+/* Quiz Image Stylying */
+#quiz-out {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#quiz-image {
+    background: url(../images/dora-lesson-page.jpg) no-repeat center center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Science Quiz section */
 .start_btn, 
 .info_box, 
 .quiz_box, 

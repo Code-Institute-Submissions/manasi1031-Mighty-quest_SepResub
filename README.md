@@ -100,6 +100,8 @@ The below 2 font families have been used for my website mainly:
 
 I used the palette maker from the [Coolors](https://coolors.co/image-picker) website based on the hero image chosen for the index.html page. 
 
+This palette has been derived from the hero image and a [visual representation](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Images/color-collage.png)
+
 Colors chosen are either direct colors or in the palette shades to give a better effect as below: 
 - HTML Background: #B4DBD4
 - HTML Body: #513832
@@ -356,6 +358,10 @@ All images obtained are non-copyrighted and can be used freely:
 - Used for Geography - Compass Lesson: https://pixabay.com/illustrations/compass-north-south-east-west-2925824/ 
 
 - Used for 404 error page: https://pixabay.com/illustrations/panda-hug-sorry-cute-cute-bear-3277404/
+
+- Used for Lesson page image: https://i.ytimg.com/vi/oThiTwPjt6A/maxresdefault.jpg 
+
+- Used for Quiz page image: https://clipground.com/pics/get
 
 #### Video:
 
