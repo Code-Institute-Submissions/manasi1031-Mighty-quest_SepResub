@@ -80,8 +80,8 @@ h1, h2, h3, #menu {
 }
 
 #hero-image {
-    background: url(../images/dora-hero-image.jpeg) no-repeat center center;
-    height: 500px;
+    background: url(../images/dora-hero-image.jpg) no-repeat center center;
+    height: 800px;
     width: 100%;
     background-size: cover;
 }
@@ -791,7 +791,7 @@ section .option_list .option .icon{
 }
 
 #contactus-image {
-    background: url(../images/lighbulb-question.jpeg) no-repeat center center;
+    background: url(../images/dora-contact-page.jpg) no-repeat center center;
     margin-top: 40px;
     height: 800px;
     width: 100%;
@@ -903,7 +903,7 @@ section .option_list .option .icon{
 
 #error-text img {
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 /** Media queries MEMORY GAME ONLY**/

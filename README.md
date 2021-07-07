@@ -329,9 +329,6 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 
 - In general, I used the knowledge and reference of [w3schools](https://www.w3schools.com/) to guide me and learn more.
 
-- I have used the below link from W3schools for button animation on the bottom link of each page: 
-    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 
-
 - I have used data from W3schools.com to show how to collapse the tabs and modified it to suit my content for the Lesson section. 
     https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
 
@@ -348,9 +345,9 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 
 All images obtained are non-copyrighted and can be used freely:
 
-- Used for Contact us page: https://www.pexels.com/photo/clear-light-bulb-placed-on-chalkboard-355952/
+- Used for Contact us page: https://wallpapercave.com/w/wp1935193 
 
-- Used for Hero image on index page: https://www.pexels.com/photo/landscape-nature-vacation-love-8083429/
+- Used for Hero image on index page: https://wallpapercave.com/wp/wp1935114.jpg 
 
 - Used for the Science - Diet Lesson section: https://pixabay.com/vectors/vegan-veggie-plant-based-5455065/
 
@@ -358,7 +355,7 @@ All images obtained are non-copyrighted and can be used freely:
 
 - Used for Geography - Compass Lesson: https://pixabay.com/illustrations/compass-north-south-east-west-2925824/ 
 
-- Used for 404 error page: https://pixabay.com/illustrations/board-school-blackboard-empty-73496/
+- Used for 404 error page: https://pixabay.com/illustrations/panda-hug-sorry-cute-cute-bear-3277404/
 
 #### Video:
 
