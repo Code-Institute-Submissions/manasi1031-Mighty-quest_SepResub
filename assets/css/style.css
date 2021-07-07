@@ -30,7 +30,7 @@ hr {
 
 .center {
     text-align: center;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
 }
 
 /* Heading and navigation menu*/
@@ -119,10 +119,15 @@ footer {
     list-style-type: none;
 }
 
+.social-media i:hover {
+    background-color: #5C9247;
+    border: 1px solid #704848;
+}
+
 /* Lessons Page */
 .lesson {
-    background-color: #C47E0C;
-    color: white;
+    background-color: #DB7228;
+    color: #132F17;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -153,6 +158,7 @@ footer {
 .text-content {
     float: right;
     width: 47%;
+    padding: 0 20px;
 }
 
 .text-content p {
