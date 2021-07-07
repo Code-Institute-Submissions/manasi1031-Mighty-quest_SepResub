@@ -209,6 +209,8 @@ Languages used:
 
 - [PNG to JPG](https://png2jpg.com/) to convert png files to jpg.
 
+- [Image Resizer](https://resizeimage.net/) to resize images to fit screen.
+
 [Back to Table of Contents](#table-of-contents)
 
 --------

@@ -169,6 +169,19 @@ footer {
     width: 50% !important;
 }
 
+.bottom-link {
+    font-family: inherit;
+    border: 1px double #704848;
+    background-color: #C896BD;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+    
+#bottom-link:hover {
+    background-color: #5C9247;
+    border: 1px solid #704848;
+} 
+
 /* Lesson Image Stylying */
 #lesson-out {
     height: auto;
@@ -180,7 +193,7 @@ footer {
 
 #lesson-image {
     background: url(../images/dora-lesson-page.jpg) no-repeat center center;
-    height: 500px;
+    height: 800px;
     width: 100%;
     background-size: cover;
 }
@@ -214,6 +227,64 @@ footer {
     text-align: center;
 }
 
+/* Popup box BEGIN */
+.hover_bkgr {
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
 /* Quiz section */
 #science, #geography, #maths {
     margin: 0;
@@ -232,8 +303,8 @@ footer {
 }
 
 #quiz-image {
-    background: url(../images/dora-lesson-page.jpg) no-repeat center center;
-    height: 500px;
+    background: url(../images/dora-quiz-page.jpg) no-repeat center center;
+    height: 800px;
     width: 100%;
     background-size: cover;
 }
@@ -982,7 +1053,7 @@ section .option_list .option .icon{
         width: 100%;
     }
 
-    #hero-image {
+    #hero-image, #lesson-image, #quiz-image {
         height: 400px;
     }
 

@@ -282,3 +282,15 @@ function questionCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
+// Function to open and close pop up resource box for Geography and Maths 
+$(window).load(function () {
+    $(".trigger_popup").click(function(){
+       $('.hover_bkgr').show();
+    });
+    $('.hover_bkgr').click(function(){
+        $('.hover_bkgr').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr').hide();
+    });
+});
