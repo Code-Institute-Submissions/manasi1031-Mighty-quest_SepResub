@@ -101,11 +101,9 @@ The below 2 font families have been used for my website mainly:
 I used the palette maker from the [Coolors](https://coolors.co/image-picker) website based on the hero image chosen for the index.html page. 
 
 Colors chosen are either direct colors or in the palette shades to give a better effect as below: 
-- HTML Background: #C6EFF4
-- HTML Body: #67442E
-- All Headings: #345579
-- Buttons Background: #80C40B
-- Buttons Text: #14202E
+- HTML Background: #B4DBD4
+- HTML Body: #513832
+- All Headings: #3A1E34
 
 [Click here to view Color Palette](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/color-palette.pdf) 
 
@@ -206,6 +204,8 @@ Languages used:
 - CSS Validator: Used for validating CSS code.
 
 - [Techsini website](https://techsini.com/) to create a visual mockup of the site.
+
+- [PNG to JPG](https://png2jpg.com/) to convert png files to jpg.
 
 [Back to Table of Contents](#table-of-contents)
 

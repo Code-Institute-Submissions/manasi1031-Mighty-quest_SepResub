@@ -28,6 +28,11 @@ hr {
     padding: 10px 0 10px 0;    
 }
 
+.center {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
 /* Heading and navigation menu*/
 h1, h2, h3, #menu {
     font-family: 'Barlow Condensed', sans-serif;
@@ -84,11 +89,6 @@ h1, h2, h3, #menu {
     height: 800px;
     width: 100%;
     background-size: cover;
-}
-
-/* About us section */
-#center {
-    text-align: center;
 }
 
 /* Footer */
@@ -903,7 +903,7 @@ section .option_list .option .icon{
 
 #error-text img {
     height: auto;
-    width: auto;
+    max-width: 100%;
 }
 
 /** Media queries MEMORY GAME ONLY**/
@@ -950,13 +950,8 @@ section .option_list .option .icon{
         width: 100%;
     }
 
-    #bottom-container {
-        flex-direction: column;
-    }
-
-    .bottom-link {
-        width: 100%;
-        font-size: inherit;
+    #hero-image {
+        height: 400px;
     }
 
     .image-box, .text-content {
