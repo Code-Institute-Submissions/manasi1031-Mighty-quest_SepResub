@@ -138,9 +138,6 @@ INDEX OR HOME PAGE:
 - About us:
     - This talks about the purpose of the website in a few short words.
 
-- Bottom Links:
-    - Each page has relevant links (except Memory Game) to give a child a quick click option when they are done with a certain page; instead of scrolling right back up.
-
 - Footer: 
     - Footer is consistent on all pages. 
     - This has given access to all main social media platforms. Each link will open in a separate tab in a new browser window. 
@@ -231,7 +228,7 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
     _“As a first time visitor, I want to ascertain the purpose of website.”_
 
-- I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. Each page also has a bottom link (except memory page) that kids can move on directly to instead of going back up to the menu navigation. This covers the below user stories:
+- I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. This covers the below user stories:
 
     _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
     _“I want to be able to easily navigate through the website.”_
@@ -259,7 +256,11 @@ Note: No errors were received.
 
 #### Issues found during deployment:
 
-TO ADD
+- Error on console after deployment - “Error with Permissions-Policy header: Unrecognized feature: ‘interest-cohort’.”
+
+    This is not an error that I could resolve and here is the link I found online stating that I should ignore this. Link: https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780 
+
+
 
 
 
