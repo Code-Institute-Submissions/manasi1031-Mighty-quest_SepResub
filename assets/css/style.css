@@ -158,7 +158,7 @@ footer {
 .text-content {
     float: right;
     width: 47%;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .text-content p {
@@ -198,7 +198,7 @@ footer {
 }
 
 #lesson-image {
-    background: url(../images/dora-lesson-page.jpg) no-repeat center center;
+    background: url(../images/dora-lesson-page-large.jpg) no-repeat center center;
     height: 800px;
     width: 100%;
     background-size: cover;
@@ -293,7 +293,7 @@ button:hover {
 }
 
 #quiz-image {
-    background: url(../images/dora-quiz-page.jpg) no-repeat center center;
+    background: url(../images/dora-quiz-page-large.jpg) no-repeat center center;
     height: 800px;
     width: 100%;
     background-size: cover;
@@ -686,7 +686,7 @@ section .option_list .option .icon{
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #C47E0C;
+	background: #DB7228;
 	font-size: 0;
 	color: white;
 	border-radius: 5px;
@@ -699,7 +699,7 @@ section .option_list .option .icon{
 
 .deck .card.open {
 	transform: rotateY(0);
-	background: #27B7C6;
+	background: #E3C53C;
 	cursor: default;
 	animation-name: flipInY;
 	visibility: visible !important;
@@ -713,7 +713,7 @@ section .option_list .option .icon{
 
 .deck .card.match {
 	cursor: default;
-	background: #0BC421;
+	background: #5C9247;
 	font-size: 33px;
 	animation-name: rubberBand;
 	visibility: visible !important;
@@ -793,7 +793,7 @@ section .option_list .option .icon{
 }
 
 .popup .close:hover {
-	color: #0BC421;
+	color: #5C9247;
 }
 
 .popup .content-1, .content-2 {
@@ -887,7 +887,7 @@ section .option_list .option .icon{
 #contactus-image {
     background: url(../images/dora-contact-page.jpg) no-repeat center center;
     margin-top: 40px;
-    height: 800px;
+    height: 700px;
     width: 100%;
     background-size: cover;
     opacity: 0.7;
@@ -1044,12 +1044,20 @@ section .option_list .option .icon{
     }
 
     #hero-image, #lesson-image, #quiz-image {
-        height: 400px;
+        height: 300px;
+    }
+
+    #lesson-image {
+        background: url(../images/dora-lesson-page.jpg) no-repeat center center;
+    }
+
+    #quiz-image {
+        background: url(../images/dora-quiz-page.jpg) no-repeat center center;
     }
 
     .image-box, .text-content {
         float: none;
-        width: 100%;
+        width: -webkit-fill-available;
     }
 
     .quick-click {
@@ -1082,5 +1090,9 @@ section .option_list .option .icon{
 
     .footer button {
         font-size: 12px;
+    }
+
+    #contactus-image {
+        height: 550px;
     }
 }
