@@ -11,9 +11,10 @@ This site has been designed with my understanding of HTML, CSS, Javascript and U
 ## Information about project: 
 ---
 Mighty Quest is an interactive website to help growth of children in year 2 and move towards year 3 by learning with play. 
-The challenge of every parent is to keep their child busy with meaningful work that is interesting imparts knowledge. I have used this an opportunity, that I found during lockdown to keep my child busy; and found a way to inculcate her schoolwork in a website so she can learn with play. This meant that I had control over what my child was viewing and also gaining knowledge in a playful manner.
 
-## [View live website here]() 
+The challenge of every parent is to keep their child busy with meaningful work that is interesting and imparts knowledge. I have used this an opportunity, that I found during lockdown to keep my child busy; and found a way to inculcate her schoolwork in a website, so she can learn with play. This meant that I had control over what my child was viewing and also gaining knowledge in a playful manner.
+
+## [View live website here](https://manasi1031.github.io/Mighty-quest/ ) 
 
 ---------
 
@@ -49,7 +50,7 @@ The challenge of every parent is to keep their child busy with meaningful work t
 ---
 ### Goals
 ---
-The main reason to create this website is for parents and children to know more about the curriculum of a year 2 child. This website deals with imparting knowledge but in a playful manner.
+The main reason to create this website is for parents and children to know more about the curriculum of a year 2 child. This website deals with imparting knowledge in a playful manner. This also generates a sense of self study of minimum 30 minutes at home per school day to build the knowledge foundation for a child.
 
 #### Vision 
 
@@ -63,7 +64,7 @@ My aim is to provide data relevant to the user story and enhance the overall vis
 
 - Parents and Children of children studying in Year 2.
 - Prospective Parents and Children of children studying in Year 1 but want to progress teaching kids about the next year.
-- Anyone genuinely interested to learn how to guide children example Teachers or Tutors.
+- Anyone genuinely interested to learn how to guide children; example: Teachers or Tutors.
 
 #### User Stories
 
@@ -106,7 +107,7 @@ Colors chosen are either direct colors or in the palette shades to give a better
 - Buttons Background: #80C40B
 - Buttons Text: #14202E
 
-[Click here to view Color Palette]() 
+[Click here to view Color Palette](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/color-palette.pdf) 
 
 #### Wireframes
 
@@ -132,11 +133,10 @@ INDEX OR HOME PAGE:
 - Logo with Header and Navigation Menu: 
     - This is consistent on all pages.
     - The name of website is clearly visible at the top and is also responsive 
-    - Navigation bar is visible on the top of each page. It is responsive and will adapt to all devices to keep it user friendly for kids. I purposely chose to avoid a mobile menu so that kids can see what they want to click on.
+    - Navigation bar is visible on the top of each page. It is responsive and will adapt to all devices to keep it user friendly for kids. I purposely chose to avoid a mobile menu so that kids can see what they want to click on on all devices clearly.
 
 - About us:
-    - This talks about the purpose of the website  in a few short words.
-    - This also includes a section for the Memory Game with information about how to play.
+    - This talks about the purpose of the website in a few short words.
 
 - Bottom Links:
     - Each page has relevant links (except Memory Game) to give a child a quick click option when they are done with a certain page; instead of scrolling right back up.
@@ -148,22 +148,23 @@ INDEX OR HOME PAGE:
 LESSONS PAGE:
 - I have used collapsible tabs to show the different subjects and there are only 3 at the moment. 
 - However, there is an image and information relevant for kids to learn. 
-- Kids can also choose to proceed directly to the individual quiz from this page after the end of each subject/topic.
+- Kids can also choose to proceed directly to the individual quiz or access resources from this page after the end of each subject/topic.
 
 QUIZ PAGE:
-- This page has the quiz sections for each subject and has sections for each quiz.
+- This page has the quiz and or resources for each subject section. 
+- Currently, we only have a quiz for science and downloadable resources to practise for Georgraphy and Maths.
 
 MEMORY GAME PAGE:
 - This is a stress buster game for kids to play to either take a break from their study or just test their memory retaining power. 
 - The game starts automatically with clicking the first tile. 
 - It counts the time taken and also gives a congratulations pop up window with this information. 
 - This will also allow user to reset the quiz at any point and restart game from the congratulations pop up to improve the score.
-- I have not added any bottom links on this page as this is a stress buster page. (Children need to not see some study links atleast one time).
+- I have not added any bottom links on this page as this is a stress buster page. (Children need to have a break from study).
        
 CONTACT PAGE:
 - This gives user an opportunity to send an e-mail with a message giving feedback or any comments to share with creator. 
 - There is also an alert message after the message is sent. 
-- I have not added any dump-site to post the data so this is not recorded at the moment.
+- I have not added any dump-site to post the data so this is not recorded at the moment anywhere.
        
 404 ERROR PAGE: 
 - This is not a visible site but is available in case there is any error and will have the navigation links to return back to Homepage. 
@@ -226,16 +227,16 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
 #### User Testing Stories:
 
-- I have created a main home page and have information stored structurally in order of home page There is information about the website in a nutshell. This covers the below user story:
+- I have created a main home page and have information stored structurally in order. There is information about the website in a nutshell on the home page that describes the prupose of my website. This covers the below user story:
 
     _“As a first time visitor, I want to ascertain the purpose of website.”_
 
-- I have created a website that has a lessons tab for subjects, quiz tab for quiz and memory game tab for playing game. Each page also has a bottom link (except memory page) that kids can move on directly to instead of going back up to the menu navigation. This covers the below user stories:
+- I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. Each page also has a bottom link (except memory page) that kids can move on directly to instead of going back up to the menu navigation. This covers the below user stories:
 
     _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
     _“I want to be able to easily navigate through the website.”_
     
-- The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz that is based on these lessons. This covers the below user stories:
+- The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz or resources that is based on these lessons. This covers the below user stories:
 
     _“As a first time visitor, I want to easily access relevant information.”_
 
@@ -252,7 +253,7 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 At the and of the project I used the below websites to validate the codes:
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS.
 - [W3C Html Validator](https://validator.w3.org/) to test HTML.
-- JAVASCRIPT
+- [Javascript Validator](https://jshint.com/) to test javascript.
 
 Note: No errors were received.
 
