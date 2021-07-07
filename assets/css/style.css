@@ -884,7 +884,6 @@ section .option_list .option .icon{
 
 #contactus-form li label{
     font-weight: bold;
-    color: #345579
 }
 
 #contactus-form li input {
@@ -898,13 +897,13 @@ section .option_list .option .icon{
 #submit-button {
     font-family: inherit;
     border: 1px double #704848;
-    background-color: #6A8698;
+    background-color: #C896BD;
     font-size: 1.25rem;
     margin-top: 10px;
 }
 
 #submit-button:hover {
-    background-color: #80C40B;
+    background-color: #5C9247;
     border: 1px solid #704848;
 }
 

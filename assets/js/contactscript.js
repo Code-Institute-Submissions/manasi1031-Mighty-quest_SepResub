@@ -2,7 +2,7 @@
 
 /* Function called to confirm that message has been submitted to sender and gives an alert*/
 /* Data is not recorded anywhere*/
-function myFunction(){
+function submitForm(){
   // Define variables
   let name = document.getElementById("fname").value;
   var email = document.getElementById("email").value;

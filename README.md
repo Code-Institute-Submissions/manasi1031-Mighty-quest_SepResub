@@ -252,15 +252,21 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 At the and of the project I used the below websites to validate the codes:
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS.
 - [W3C Html Validator](https://validator.w3.org/) to test HTML.
-- [Javascript Validator](https://jshint.com/) to test javascript.
+- [JavaScript Validator](https://jshint.com/) to test javascript.
 
-Note: No errors were received.
+Notes for code validation:
+- JavaScript:
+    - The JS validator for contact page states that that submitForm is unused variable. However this is a function. 
+    - The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. However these are functions. 
+- HTML:
+    - The "type" is required on javascript front to run game and not relevant to HTML. So this error has been ignored by me.
+    [Image of type error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-html-validation-error.jpg)
 
 #### Issues found during deployment:
 
 - Error on console after deployment - “Error with Permissions-Policy header: Unrecognized feature: ‘interest-cohort’.”
 
-    This is not an error that I could resolve and here is the link I found online stating that I should ignore this. Link: https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780 
+    This is not an error that I could resolve and here is the link I found online stating that I should ignore this. [Link](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780)
 
 
 
