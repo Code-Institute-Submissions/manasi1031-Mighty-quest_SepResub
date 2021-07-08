@@ -134,7 +134,8 @@ footer {
     border: 1px solid;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
 }
   
 .sub-lesson {
@@ -159,20 +160,11 @@ footer {
     float: right;
     width: 47%;
     padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 .text-content p {
     margin-top: 0px;
-}
-
-.text-content iframe {
-    height: auto;
-    width: 100%;
-    padding: 10px 0 10px 0;
-}
-
-.quick-click {
-    width: 50% !important;
 }
 
 .bottom-link {
@@ -181,6 +173,7 @@ footer {
     background-color: #C896BD;
     font-size: 1.25rem;
     margin-top: 10px;
+    padding: 5px;
 }
     
 #bottom-link:hover {
@@ -207,7 +200,7 @@ footer {
 /* Quiz page */
 .quiz-tab {
     overflow: hidden;
-    background: #C227C6;
+    background: #C896BD;
     display: inline-flex;
     justify-content: space-evenly;
     align-content: stretch;
@@ -318,13 +311,18 @@ button:hover {
 }
 .start_btn button{
     font-size: 25px;
-    color: #14202E;
+    color: inherit;
     padding: 15px 30px;
     outline: none;
-    border: none;
+    border: 1px solid #704848;
     border-radius: 5px;
-    background: #80C40B;
+    background: #C896BD;
     cursor: pointer;
+}
+
+.start_btn button:hover {
+    background-color: #5C9247;
+    border: 1px solid #704848;
 }
 
 .info_box{
@@ -382,7 +380,7 @@ button:hover {
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #704848;
     transition: all 0.3s ease;
 }
 
@@ -414,9 +412,9 @@ button:hover {
 }
 
 .quiz_box header .timer{
-    color: #14202E;
-    background: #C6EFF4;
-    border: 1px solid #229EAB;
+    color: black;
+    background: #C896BD;
+    border: 1px solid #704848;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -437,12 +435,12 @@ button:hover {
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: #14202E;
+    color: black;
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #C6EFF4;
-    border: 1px solid #229EAB;
+    background: #EDDA84;
+    border: 1px solid #A7561C;
     user-select: none;
 }
 
@@ -451,7 +449,8 @@ button:hover {
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #C6EFF4;
+    background: gray;
+    width: 100%;
 }
 
 section .question_text{
@@ -465,8 +464,8 @@ section .option_list{
 }
 
 section .option_list .option{
-    background: aliceblue;
-    border: 1px solid #84c5fe;
+    background: #EBD8E7;
+    border: 1px solid #733D67;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 15px;
@@ -490,14 +489,14 @@ section .option_list .option:hover{
 
 section .option_list .option.correct{
     color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    background: #EBD8E7;
+    border: 1px solid #733D67;
 }
 
 section .option_list .option.incorrect{
     color: #C63727;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    background: #EBD8E7;
+    border: 1px solid #733D67;
 }
 
 section .option_list .option.disabled{
@@ -559,10 +558,10 @@ section .option_list .option .icon{
     cursor: pointer;
     border: none;
     outline: none;
-    color: #155724;
+    color: black;
     border-radius: 5px;
-    background: #C6EFF4;
-    border: 1px solid #229EAB;
+    background: #EBD8E7;
+    border: 1px solid #733D67;
     line-height: 10px;
     opacity: 0;
     pointer-events: auto;
@@ -571,7 +570,8 @@ section .option_list .option .icon{
 }
 
 .footer button:hover{
-    background: #0263ca;
+    background-color: #5C9247;
+    border: 1px solid #704848;
 }
 
 .footer button.show{
@@ -596,7 +596,7 @@ section .option_list .option .icon{
 
 .result_box .icon{
     font-size: 100px;
-    color: #007bff;
+    color: #733D67;
     margin-bottom: 10px;
 }
 
@@ -632,27 +632,27 @@ section .option_list .option .icon{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #704848;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
-    color: #fff;
-    background: #007bff;
+    color: black;
+    background: #C896BD;
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    background: #5C9247;
 }
 
 .buttons button.quit{
-    color: #007bff;
-    background: #fff;
+    color: black;
+    background: #C896BD;
 }
 
 .buttons button.quit:hover{
-    color: #fff;
-    background: #007bff;
+    border: 1px solid #704848;
+    background: #5C9247;
 }
 
 /* Memory Game Page*/
@@ -757,7 +757,7 @@ section .option_list .option .icon{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(227, 197, 60);
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
@@ -771,7 +771,7 @@ section .option_list .option .icon{
 .popup {
 	margin: 70px auto;
 	padding: 20px;
-	background: #C7C0C0;
+	background: #C896BD;
 	border-radius: 5px;
 	width: 85%;
 	position: relative;
@@ -808,13 +808,13 @@ section .option_list .option .icon{
 }
 
 #play-again {
-	background-color: #141214;
+	background-color: #B4DBD4;
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	color: white;
+	color: inherit;
 	border-radius: 5px;
 }
 
@@ -1000,12 +1000,29 @@ section .option_list .option .icon{
 }
 
 /** Media queries MEMORY GAME ONLY**/
-/* For Mobiles */
+/* For Small Mobiles */
 @media screen and (max-width: 320px) {
     .deck {
-		width: 85%;
+		width: 93%;
         padding: .5rem;
 	}
+
+    .card {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+/* For Large Mobiles */
+@media screen and (max-width: 768px) {
+    .deck {
+		width: 85%;
+	}
+
+    .card {
+        height: 4rem;
+        width: 4rem;
+    }
 }
 
 /** Media queries MEMORY GAME ONLY**/
@@ -1058,10 +1075,6 @@ section .option_list .option .icon{
     .image-box, .text-content {
         float: none;
         width: -webkit-fill-available;
-    }
-
-    .quick-click {
-        width: 100% !important;
     }
 
     .quiz-tab button {
