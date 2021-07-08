@@ -618,8 +618,9 @@ section .option_list .option .icon{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    width: 300px;
+    width: 150px;
     height: 200px;
+    padding: 5px;
 }
    
 .modalImg:hover {
@@ -1121,6 +1122,15 @@ section .option_list .option .icon{
 
     .quiz-tab button {
         font-size: 1rem;
+    }
+
+    .modalImg {
+        width: 125px;
+        height: 150px;
+    }
+
+    .modal-content {
+        width: 100%;
     }
 
     #contactus-cover {

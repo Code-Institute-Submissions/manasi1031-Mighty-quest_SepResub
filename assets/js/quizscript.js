@@ -282,34 +282,6 @@ function questionCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
-// Open/close resources in a pop up box
-
-// select the open-btn button
-let openBtn = document.getElementById('open-btn');
-// select the modal-background
-let modalBackground = document.getElementById('modal-background');
-// select the close-btn 
-let closeBtn = document.getElementById('close-btn');
-
-// shows the modal when the user clicks open-btn
-openBtn.addEventListener('click', function() {
-  modalBackground.style.display = 'block';
-});
-
-// hides the modal when the user clicks close-btn
-closeBtn.addEventListener('click', function() {
-  modalBackground.style.display = 'none';
-});
-
-// hides the modal when the user clicks outside the modal
-window.addEventListener('click', function(event) {
-  // check if the event happened on the modal-background
-  if (event.target === modalBackground) {
-    // hides the modal
-    modalBackground.style.display = 'none';
-  }
-});
-
 
 // Maths section Resources Modal or pop up section
 // Get the modal and define variable
@@ -324,33 +296,37 @@ var img4 = document.getElementById('myImg4');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
+//image 1 function
 img1.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-}
+};
 
+//image 2 function
 img2.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-}
+};
 
+//image 3 function
 img3.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-}
+};
 
+//image 4 function
 img4.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
-}
+};
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closemodal")[0];
@@ -358,4 +334,4 @@ var span = document.getElementsByClassName("closemodal")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
-}
+};
