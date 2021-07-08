@@ -125,15 +125,12 @@
         <br>
         <p>No quiz for this topic yet, however, please print below documents to practice at home and have an adult check it.</p>
         <br>
-        <!-- Modal Open Button -->
-        <button id="open-btn">Compass Maze Quiz</button>
-        <!-- Modal Background and Modal -->
-        <div id="modal-background">
-            <div id="modal">
-                <span id="close-btn">&times;</span>
-                <img src="assets/Documents/mazes.pdf"  alt="Compass Maze Quiz">
-            </div>
-        </div>
+        <ul>
+            <li>
+                <a href="assets/Documents/mazes.pdf" 
+                target="_blank">Compass Maze Quiz</a>
+            </li>
+        </ul>
     </div>
     
     <!--Maths Resource section-->
@@ -142,52 +139,24 @@
         <br>
         <p>No quiz for this topic yet, however, please print below documents to practice at home and have an adult check it.</p>
         <br>
-        <ul>
-            <li><!-- Modal Open Button -->
-                <button id="open-btn">Year 2 Maths Worksheets Addition</button>
-                <!-- Modal Background and Modal -->
-                <div id="modal-background">
-                    <div id="modal">
-                        <span id="close-btn">&times;</span>
-                        <img src="assets/images/year-2-maths-worksheets-addition.jpg"  
-                        alt="Year 2 Maths Worksheets Addition">
-                    </div>
-                </div>
-            </li>
-            <li><!-- Modal Open Button -->
-                <button id="open-btn">Year 2 Maths Worksheets Subtraction</button>
-                <!-- Modal Background and Modal -->
-                <div id="modal-background">
-                    <div id="modal">
-                        <span id="close-btn">&times;</span>
-                        <img src="assets/images/year-2-maths-worksheets-subtraction.jpg"  
-                        alt="Year 2 Maths Worksheets Subtraction">
-                    </div>
-                </div>
-            </li>
-            <li><!-- Modal Open Button -->
-                <button id="open-btn">Year 2 Maths Worksheets Easy</button>
-                <!-- Modal Background and Modal -->
-                <div id="modal-background">
-                    <div id="modal">
-                        <span id="close-btn">&times;</span>
-                        <img src="assets/images/year-2-maths-worksheets-easy.jpg"  
-                        alt="Year 2 Maths Worksheets Easy">
-                    </div>
-                </div>
-            </li>
-            <li><!-- Modal Open Button -->
-                <button id="open-btn">Year 2 Maths Worksheets Vertical</button>
-                <!-- Modal Background and Modal -->
-                <div id="modal-background">
-                    <div id="modal">
-                        <span id="close-btn">&times;</span>
-                        <img src="assets/images/year-2-maths-worksheets-free-vertical.jpg"  
-                        alt="Year 2 Maths Worksheets Vertical">
-                    </div>
-                </div>
-            </li>
-        </ul>    
+        <!-- Trigger the Modal for pop up view of resources-->
+        <img class="modalImg" id="myImg1" src="assets/images/year-2-maths-worksheets-addition.jpg" 
+        alt="Year 2 Maths Worksheets Addition">
+        <img class="modalImg" id="myImg2" src="assets/images/year-2-maths-worksheets-subtraction.jpg" 
+        alt="Year 2 Maths Worksheets Subtraction">
+        <img class="modalImg" id="myImg2" src="assets/images/year-2-maths-worksheets-easy.jpg" 
+        alt="Year 2 Maths Worksheets Easy">
+        <img class="modalImg" id="myImg2" src="assets/images/year-2-maths-worksheets-free-vertical.jpg" 
+        alt="Year 2 Maths Worksheets Vertical">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Modal Button -->
+            <span class="closeModal" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>   
     </div>
     <hr>
         

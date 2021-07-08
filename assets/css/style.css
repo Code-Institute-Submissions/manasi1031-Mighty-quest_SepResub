@@ -226,48 +226,6 @@ footer {
     text-align: center;
 }
 
-/* Resources popup box */
-button:hover {
-    cursor: pointer;
-}
-  
-/* modal part */
-#modal-background {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-#modal {
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    font-size: 1.5rem;
-}
-  
-#close-btn {
-    align-self: flex-end;
-}
-  
-#close-btn:hover {
-    cursor: pointer;
-    color: #ff0000;
-}
-
 /* Quiz section */
 #science, #geography, #maths {
     margin: 0;
@@ -321,8 +279,8 @@ button:hover {
 }
 
 .start_btn button:hover {
-    background-color: #5C9247;
-    border: 1px solid #704848;
+    background-color: #5C9247;
+    border: 1px solid #704848;
 }
 
 .info_box{
@@ -450,7 +408,6 @@ button:hover {
     left: 0px;
     height: 3px;
     background: gray;
-    width: 100%;
 }
 
 section .question_text{
@@ -570,8 +527,8 @@ section .option_list .option .icon{
 }
 
 .footer button:hover{
-    background-color: #5C9247;
-    border: 1px solid #704848;
+    background-color: #5C9247;
+    border: 1px solid #704848;
 }
 
 .footer button.show{
@@ -651,8 +608,8 @@ section .option_list .option .icon{
 }
 
 .buttons button.quit:hover{
-    border: 1px solid #704848;
-    background: #5C9247;
+    background-color: #5C9247;
+    border: 1px solid #704848;
 }
 
 /* Memory Game Page*/
