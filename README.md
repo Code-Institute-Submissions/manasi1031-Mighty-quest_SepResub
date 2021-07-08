@@ -270,7 +270,7 @@ Notes for code validation:
 
     This is not an error that I could resolve and here is the link I found online stating that I should ignore this. [Link](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780)
 
-
+- /*jshint esversion: 6 */ has been added as per recommendation to the beginning of all my script.js files as per Slack community to ensure that “let” variable can be used.
 
 
 

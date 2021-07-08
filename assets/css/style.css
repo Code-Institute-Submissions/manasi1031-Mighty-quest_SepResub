@@ -740,9 +740,25 @@ section .option_list .option .icon{
 	margin-bottom: 10px;
 }
 
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
 .score-panel .restart {
 	float: right;
 	cursor: pointer;
+}
+
+.fa-star {
+	color: #FFD700;
 }
 
 .timer {
@@ -805,6 +821,10 @@ section .option_list .option .icon{
 .show {
 	visibility: visible !important;
 	opacity: 1 !important;
+}
+
+#starRating li {
+	display: inline-block;
 }
 
 #play-again {
@@ -1005,12 +1025,15 @@ section .option_list .option .icon{
     .deck {
 		width: 85%;
 	}
+}
 
-	.deck .card {
+@media screen and (max-width: 420px) {
+    .deck .card {
 		height: 4.7rem;
-		width: 4.7rem;
+        width: 4.7rem;
 	}
 }
+
 
 /** Media queries MEMORY GAME ONLY**/
 /* For Tablets and larger screens */
@@ -1049,10 +1072,14 @@ section .option_list .option .icon{
 
     #lesson-image {
         background: url(../images/dora-lesson-page.jpg) no-repeat center center;
+        width: 100%;
+        background-size: cover;
     }
 
     #quiz-image {
         background: url(../images/dora-quiz-page.jpg) no-repeat center center;
+        width: 100%;
+        background-size: cover;
     }
 
     .image-box, .text-content {
