@@ -266,15 +266,31 @@ Notes for code validation:
 
 #### Issues found during deployment:
 
-- Error on console after deployment - “Error with Permissions-Policy header: Unrecognized feature: ‘interest-cohort’.”
+- _Interest-Cohort Error_
+Error on console after deployment - “Error with Permissions-Policy header: Unrecognized feature: ‘interest-cohort’.”
 
     This is not an error that I could resolve and here is the link I found online stating that I should ignore this. [Link](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780)
 
-- /*jshint esversion: 6 */ has been added as per recommendation to the beginning of all my script.js files as per Slack community to ensure that “let” variable can be used.
+- _let variable error_
+/*jshint esversion: 6 */ has been added as per recommendation to the beginning of all my script.js files as per Slack community to ensure that “let” variable can be used.
 
+- Originally I wanted to have 2 quiz with the same javaScript for showcasing Science and Geography questions. However, my coding did not work out even after trying for 2 weeks straight. So I changed my plan of having only one quiz for Science and have resources for Geography. I am working on it separately and will add this in my next version upgrade. It is not that I will not be able to do it, but it is taking more time than I thought originally.
 
+- _In the Memory Quiz, I had a repeat button installed for kids to restart game if they are not happy with current score_ 
 
+![Memory Repeat Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-repeat-error.jpg)
 
+However, when when I tried to rectify it, my code for game stopped working. So I have removed the option from the game currently. I plan to add this back in with one of the next upgrades when we will add levels of difficulty.
+
+- _Contact page submit button error_
+
+![Contact Page Submit Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/submit-button-error-contact.jpg)
+
+I was facing a problem when submiting my form, as it was submiting without all details being completed. To ensure this was resolved, I added a line in my javascript file as "if( name ==='' || email ==='' || message ==='')" and the error was resolved.
+
+Now when we try to submit without filling all details, the error message pops up as below.
+
+![Contact Page Submit Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/submit-button-error-contact-resolved.jpg)
 
 #### Performance Testing:
 

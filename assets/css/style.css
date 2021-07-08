@@ -199,9 +199,9 @@ footer {
 
 #lesson-image {
     background: url(../images/dora-lesson-page-large.jpg) no-repeat center center;
-    height: 800px;
+    height: 500px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* Quiz page */
@@ -296,7 +296,7 @@ button:hover {
     background: url(../images/dora-quiz-page-large.jpg) no-repeat center center;
     height: 800px;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* Science Quiz section */
@@ -409,7 +409,7 @@ button:hover {
 }
 
 .quiz_box header .title{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -469,7 +469,7 @@ section .option_list .option{
     border: 1px solid #84c5fe;
     border-radius: 5px;
     padding: 8px 15px;
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1005,39 +1005,6 @@ section .option_list .option .icon{
     .deck {
 		width: 85%;
         padding: .5rem;
-	}
-}
-
-@media screen and (max-width: 420px) {
-    .deck {
-        padding: 1.25rem;
-    }
-    
-    .deck .card {
-		height: 3.5rem;
-        width: 3.5rem;
-	}
-}
-
-@media screen and (max-width: 573px) {
-    .deck {
-        padding: 1.25rem;
-    }
-    
-    .deck .card {
-		height: 4.5rem;
-        width: 4.5rem;
-	}
-}
-
-@media screen and (max-width: 663px) {
-    .deck {
-        padding: 4.75rem;
-    }
-    
-    .deck .card {
-		height: 4.75rem;
-        width: 4.75rem;
 	}
 }
 
