@@ -55,9 +55,10 @@
         <section class="score-panel">
            	<span class="moves">0</span> Move(s)
             <div class="timer"></div>
+            <!-- removed to see if game works without
             <div class="restart" onclick=startGame()>
         		<i class="fa fa-repeat"></i>
-        	</div>
+        	</div>-->
         </section>
         <!--Add cards in list format-->
         <ul class="deck" id="card-deck">
@@ -115,13 +116,18 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations</h2>
+                <br>
                 <a class="close" href="#">×</a>
+                <br>
                 <div class="content-1">
                     Congratulations you're a winner!!!
                 </div>
+                <br>
                 <div class="content-2">
                     <p>You made <span id=finalMove> </span> moves </p>
+                    <br>
                     <p>in <span id=totalTime> </span> </p>
+                    <br>
                 </div>
                 <!--Play again option-->
                 <button id="play-again" onclick="playAgain()">Play again</button>

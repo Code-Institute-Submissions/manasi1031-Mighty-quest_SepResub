@@ -784,8 +784,8 @@ section .option_list .option .icon{
 
 .popup .close {
 	position: absolute;
-	top: 20px;
-	right: 30px;
+	top: 10px;
+	right: 20px;
 	transition: all 200ms;
 	font-size: 30px;
 	font-weight: bold;
@@ -1004,16 +1004,42 @@ section .option_list .option .icon{
 @media screen and (max-width: 320px) {
     .deck {
 		width: 85%;
+        padding: .5rem;
 	}
 }
 
 @media screen and (max-width: 420px) {
+    .deck {
+        padding: 1.25rem;
+    }
+    
     .deck .card {
-		height: 4.7rem;
-        width: 4.7rem;
+		height: 3.5rem;
+        width: 3.5rem;
 	}
 }
 
+@media screen and (max-width: 573px) {
+    .deck {
+        padding: 1.25rem;
+    }
+    
+    .deck .card {
+		height: 4.5rem;
+        width: 4.5rem;
+	}
+}
+
+@media screen and (max-width: 663px) {
+    .deck {
+        padding: 4.75rem;
+    }
+    
+    .deck .card {
+		height: 4.75rem;
+        width: 4.75rem;
+	}
+}
 
 /** Media queries MEMORY GAME ONLY**/
 /* For Tablets and larger screens */
