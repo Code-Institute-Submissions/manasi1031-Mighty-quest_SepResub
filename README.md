@@ -113,7 +113,25 @@ Colors chosen are either direct colors or in the palette shades to give a better
 
 Balsamiq has been used to create wireframes for this project.
 
-- [Laptop view of Home page]()
+- [Wireframes overview pdf file](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/mighty-quest-wireframes.pdf) 
+
+- [Laptop & Ipad view of Home page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-ipad-home-page-view.jpg) 
+
+- [Laptop & Ipad view of Lesson page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-ipad-lesson-page-view.jpg)
+
+- [Laptop & Ipad view of Quiz page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-ipad-quiz-page-view.jpg)
+
+- [Mobile view of Home page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/mobile-home-page-view.jpg)
+
+- [Mobile view of Lesson page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/mobile-lesson-page-view.jpg)
+
+- [Mobile view of Quiz page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/mobile-quiz-page-view.jpg)
+
+- [Contact page view](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-page.jpg)
+
+- [404 error page view](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/404-error-page.jpg)
+
+- No wireframe planned for Memory page.
 
 #### Images
 
@@ -150,13 +168,13 @@ LESSONS PAGE:
 QUIZ PAGE:
 - This page has the quiz and or resources for each subject section. 
 - Currently, we only have a quiz for science and downloadable resources to practise for Georgraphy and Maths.
+- I have used a pop up or modal image option for the Maths resources to ensure kids stay on the same page.
 
 MEMORY GAME PAGE:
 - This is a stress buster game for kids to play to either take a break from their study or just test their memory retaining power. 
 - The game starts automatically with clicking the first tile. 
 - It counts the time taken and also gives a congratulations pop up window with this information. 
-- This will also allow user to reset the quiz at any point and restart game from the congratulations pop up to improve the score.
-- I have not added any bottom links on this page as this is a stress buster page. (Children need to have a break from study).
+- This will also allow user to restart game from the congratulations pop up to improve the score.
        
 CONTACT PAGE:
 - This gives user an opportunity to send an e-mail with a message giving feedback or any comments to share with creator. 
@@ -366,6 +384,8 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
     and 
     https://www.wikihow.com/Make-a-Basic-JavaScript-Quiz 
 
+- For the Maths resources under quiz section, I had to refer to material from this website to work out an overview of viewing images:
+    https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery
 
 #### Media
 

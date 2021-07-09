@@ -282,7 +282,6 @@ function questionCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
-
 // Maths section Resources Modal or pop up section
 // Get the modal and define variable
 var modal = document.getElementById('myModal');
