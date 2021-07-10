@@ -162,11 +162,12 @@ INDEX OR HOME PAGE:
 
 LESSONS PAGE:
 - I have used collapsible tabs to show the different subjects and there are only 3 at the moment. 
-- However, there is an image and information relevant for kids to learn. 
+- However, there is an image (Image is just to keep kids engrossed and not hero image) and information relevant for kids to learn. 
 - Kids can also choose to proceed directly to the individual quiz or access resources from this page after the end of each subject/topic.
 
 QUIZ PAGE:
 - This page has the quiz and or resources for each subject section. 
+- Image is just to keep kids engrossed and not hero image.
 - Currently, we only have a quiz for science and downloadable resources to practise for Georgraphy and Maths.
 - I have used a pop up or modal image option for the Maths resources to ensure kids stay on the same page.
 
@@ -248,16 +249,16 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
 #### User Testing Stories:
 
-- I have created a main home page and have information stored structurally in order. There is information about the website in a nutshell on the home page that describes the prupose of my website. This covers the below user story:
+- I have created a main home page and have information stored structurally in order. There is information about the website in a nutshell on the home page that describes the purpose of my website. This covers the below user story:
 
     _“As a first time visitor, I want to ascertain the purpose of website.”_
 
-- I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. This covers the below user stories:
+- I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. There are quick click buttons or tabs or links to guide them and move between pages. For the sake of children, I have not kept a mobile menu and still kept the names for each page with links. This covers the below user stories:
 
     _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
     _“I want to be able to easily navigate through the website.”_
     
-- The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz or resources that is based on these lessons. This covers the below user stories:
+- The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz or resources that is based on these lessons. Currently we only have 3 subjects in the lesson page. In the quiz page, we have only a science quiz and resources for the other 2 subjects. This covers the below user stories:
 
     _“As a first time visitor, I want to easily access relevant information.”_
 
@@ -265,7 +266,7 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
     _“As a first time visitor, I want to be able to access the site from all device types.”_
 
-- I have created a contact us form section for any questions or feedback or comments that want to be shared. I have not created a dump site to record the data at this stage but I have put in a basic Javascript alert that advises the sender message has been sent. This covers the below user story:
+- I have created a contact us form section for any questions or feedback or comments that want to be shared. I have not created a dump site to record the data at this stage but I have put in a basic Javascript alert that advises the sender message has been sent. Currently the name and e-mail fields do not populate on their own, as parents do not want to share information with kids. This might be want to be controlled by parents at the moment for a year 2 child. This covers the below user story:
 
     _“As a returning visitor, I want to contact the website to give any feedback or comments.”_
 
@@ -280,9 +281,11 @@ Notes for code validation:
 - JavaScript:
     - The JS validator for contact page states that that submitForm is unused variable. However this is a function. 
     - The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. However these are functions. 
+    - The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined. However, they are working correctly in my code and have not shown any console errors. So I have ignored them.
+
 - HTML:
     - The "type" is required on javascript front to run game and not relevant to HTML. So this error has been ignored by me.
-    [Image of type error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-html-validation-error.jpg)
+    ![Image of type error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-html-validation-error.jpg)
 
 #### Issues found during deployment:
 
@@ -333,6 +336,30 @@ span.onclick = function() {
   modal.style.display = "none";
 };"
 
+- _Memory page CSS styling error_
+
+![Memory game error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-game-error.jpg)
+![Memory game mobile view error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-mobile-view-error.jpg)
+
+I originally approached this from a mobile front view and started backwards. This was my problem, as then the laptop section was not working out. So I started working backwards from the largest screen size to smallest. I have kept the memory game CSS styling separate to the general website for this reason.
+
+My concern was that the mobile view of 2 tiles was too long as well so I had to reduce the tile sizes there to have more tiles for one view of page.
+
+I then added the below CSS styles to them and they finally worked out.
+For small mobiles of screen size max-width 350px:
+.deck - width: 90%!important and height: fit-content!important
+.card - height: 3rem!important and width: 3rem!important
+
+For large mobiles of screen size max-width 767px:
+.deck - width: 320px and height: 340px
+
+For tablets and larger screens of min-width 768px:
+.container: font-size: inherit
+.deck : width: 660px and height: 680px
+.deck .card : height: 125px and width: 125px
+.popup : width: 60%
+        
+![Memory game error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-game-error-resolved.jpg)
 
 #### Performance Testing:
 
@@ -387,13 +414,13 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 
 #### Content
 
-- The material for lessons and quiz is taken from my daughters schools - Bonygate Primary School. I have checked with her class teacher and these are not copyrighted and can be used as per my choice.
+- The material for lessons and quiz / resources is taken from my daughters school - Bonygate Primary School. I have checked with her class teacher and these are not copyrighted and can be used as per my choice.
 
-- The maths sheets for download have been taken from - https://www.activityshelter.com/year-2-math-worksheets-free/
+- The maths sheets (as used by school already) for download have been taken from - https://www.activityshelter.com/year-2-math-worksheets-free/
 
 - To complete this project I used Code Institute student template: [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-- I have worked on this project following a step-by-step approach from the Love Maths project from Code Institute to avoid missing any steps.
+- I have worked on this project following a step-by-step approach from the Love Maths project from Code Institute to avoid missing any steps but at no point is any information copied.
 
 - In general, I used the knowledge and reference of [w3schools](https://www.w3schools.com/) to guide me and learn more.
 
@@ -430,15 +457,6 @@ All images obtained are non-copyrighted and can be used freely:
 - Used for Lesson page image: https://i.ytimg.com/vi/oThiTwPjt6A/maxresdefault.jpg 
 
 - Used for Quiz page image: https://clipground.com/pics/get
-
-#### Video:
-
-Maths videos have been taken from Oxford owl – learning at home you tube site.
-
-- https://www.youtube.com/watch?v=NwpLG9qIwIs 
-- https://www.youtube.com/watch?v=linbjLi2K5s 
-
-I have checked with the school and they have confirmed again that these videos are for public use and not copyrighted.
 
 #### Acknowledgements
 

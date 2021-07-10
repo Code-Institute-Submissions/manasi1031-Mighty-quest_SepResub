@@ -227,6 +227,15 @@ footer {
     cursor: pointer;
 }
 
+.quiz-tab button:hover {
+    background-color: #5C9247;
+    border: 1px solid #704848;
+}
+
+.quiz-tab button::after {
+    background-color: #E4965F;
+}
+
 .quiz-data {
     display: none;
     position: relative;
@@ -1053,13 +1062,13 @@ section .option_list .option .icon{
 /* For Small Mobiles */
 @media screen and (max-width: 350px) {
     .deck {
-		width: 93% !important;
-        padding: .5rem;
+        width: 90%!important;
+        height: fit-content!important;
 	}
 
     .card {
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 3rem!important;
+        width: 3rem!important;
     }
 }
 
