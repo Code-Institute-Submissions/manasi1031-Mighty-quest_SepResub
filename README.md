@@ -131,7 +131,7 @@ Balsamiq has been used to create wireframes for this project.
 
 - [404 error page view](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/404-error-page.jpg)
 
-- No wireframe planned for Memory page.
+- [Memory page view generic](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-page-overview.jpg)
 
 #### Images
 
@@ -318,6 +318,20 @@ Now when we try to submit without filling all details, the error message pops up
 
 Originally I did not add any favicon to my website. However after deploying, I kept on seeing this error. To remove this error I went to favicon generator and created one specific to my website and added it. I added the file to my main folder and added the below to all "<head>" sections of my pages and the error was resolved.
     "<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>"
+
+- _Span element undefined error in console from quizscript.js_
+
+Unfortunately, I did not take a image of the error but I recorded the details as below.
+
+"VM59397 quizscript.js:335 Uncaught TypeError: Cannot set property 'onclick' of undefined at VM59397 quizscript.js:335."
+
+To resolve this I removed the below sections from quizscript.js and my error was gone.
+"// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closemodal")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+};"
 
 
 #### Performance Testing:

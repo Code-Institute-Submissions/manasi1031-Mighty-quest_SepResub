@@ -326,4 +326,3 @@ img4.onclick = function(){
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
 };
-
