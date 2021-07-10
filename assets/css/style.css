@@ -1057,7 +1057,7 @@ section .option_list .option .icon{
 }
 
 /* For Large Mobiles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .deck {
 		width: 85%;
 	}

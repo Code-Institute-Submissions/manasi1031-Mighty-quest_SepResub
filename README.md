@@ -229,6 +229,8 @@ Languages used:
 
 - [Image Resizer](https://resizeimage.net/) to resize images to fit screen.
 
+- [Favicon Generator](https://favicon.io/favicon-generator/) to generate favicon for website.
+
 [Back to Table of Contents](#table-of-contents)
 
 --------
@@ -309,6 +311,14 @@ I was facing a problem when submiting my form, as it was submiting without all d
 Now when we try to submit without filling all details, the error message pops up as below.
 
 ![Contact Page Submit Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/submit-button-error-contact-resolved.jpg)
+
+- _Favicon error in console_
+
+![Favicon Console error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/favicon-console-error.jpg)
+
+Originally I did not add any favicon to my website. However after deploying, I kept on seeing this error. To remove this error I went to favicon generator and created one specific to my website and added it. I added the file to my main folder and added the below to all "<head>" sections of my pages and the error was resolved.
+    "<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>"
+
 
 #### Performance Testing:
 
