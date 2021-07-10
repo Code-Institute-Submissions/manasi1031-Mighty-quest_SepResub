@@ -31,6 +31,8 @@ hr {
 .center {
     text-align: center;
     padding: 0 20px 0 20px;
+    margin-bottom: 40px;
+
 }
 
 /* Heading and navigation menu*/
@@ -93,9 +95,12 @@ h1, h2, h3, #menu {
 
 /* Footer */
 footer {
-    position: static;
+    position: fixed;
     width: 100%;
     height: auto;
+    background-color: #E3C53C;
+    left: 0;
+    bottom: 0;
 }
 
 .social-media {
@@ -1056,39 +1061,6 @@ section .option_list .option .icon{
     }
 }
 
-/* For Large Mobiles */
-@media screen and (max-width: 767px) {
-    .deck {
-		width: 85%;
-	}
-
-    .card {
-        height: 4rem;
-        width: 4rem;
-    }
-}
-
-/** Media queries MEMORY GAME ONLY**/
-/* For Tablets and larger screens */
-@media screen and (min-width: 768px) {
-	.container {
-		font-size: inherit;
-	}
-
-	.deck {
-		width: 660px;
-		height: 680px;
-	}
-
-	.deck .card {
-		height: 125px;
-		width: 125px;
-	}
-
-	.popup {
-		width: 60%;
-	}
-}
 
 /* media queries - General for all other pages */
 /* for medium to mobile screens size from 750px wide and down */

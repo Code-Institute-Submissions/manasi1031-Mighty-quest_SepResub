@@ -95,7 +95,7 @@ continue_btn.onclick = ()=>{
     startTimerLine(0); 
 };
 
-let timeValue =  25;
+let timeValue =  15;
 let question_count = 0;
 let question_numb = 1;
 let userScore = 0;
@@ -112,7 +112,7 @@ restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     //hide result box
     result_box.classList.remove("activeResult"); 
-    timeValue = 25; 
+    timeValue = 15; 
     question_count = 0;
     question_numb = 1;
     userScore = 0;
