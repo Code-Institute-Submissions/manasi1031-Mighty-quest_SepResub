@@ -109,6 +109,8 @@ Colors chosen are either direct colors or in the palette shades to give a better
 
 [Click here to view Color Palette](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/color-palette.pdf) 
 
+[Click here to view Color Colage](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/color-collage.png) 
+
 #### Wireframes
 
 Balsamiq has been used to create wireframes for this project.
@@ -313,7 +315,7 @@ I was facing a problem when submiting my form, as it was submiting without all d
 
 Now when we try to submit without filling all details, the error message pops up as below.
 
-![Contact Page Submit Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/submit-button-error-contact-resolved.jpg)
+![Contact Page Submit Button error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/submit-button-error-contact-resolved.jpg)
 
 - _Favicon error in console_
 
@@ -346,18 +348,18 @@ I originally approached this from a mobile front view and started backwards. Thi
 My concern was that the mobile view of 2 tiles was too long as well so I had to reduce the tile sizes there to have more tiles for one view of page.
 
 I then added the below CSS styles to them and they finally worked out.
-For small mobiles of screen size max-width 350px:
-.deck - width: 90%!important and height: fit-content!important
-.card - height: 3rem!important and width: 3rem!important
+- For small mobiles of screen size max-width 350px:
+    - .deck - width: 90%!important and height: fit-content!important
+    - .card - height: 3rem!important and width: 3rem!important
 
-For large mobiles of screen size max-width 767px:
-.deck - width: 320px and height: 340px
+- For large mobiles of screen size max-width 767px:
+    - .deck - width: 320px and height: 340px
 
-For tablets and larger screens of min-width 768px:
-.container: font-size: inherit
-.deck : width: 660px and height: 680px
-.deck .card : height: 125px and width: 125px
-.popup : width: 60%
+- For tablets and larger screens of min-width 768px:
+    - .container: font-size: inherit
+    - .deck : width: 660px and height: 680px
+    - .deck .card : height: 125px and width: 125px
+    - .popup : width: 60%
         
 ![Memory game error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-game-error-resolved.jpg)
 
@@ -376,9 +378,9 @@ Mobile Lighthouse testing View:
 
 If you wish to see the reports in complete for the website, please click on the links below:
 
-[Laptop Lighthouse Testing Report]()
+[Laptop Lighthouse Testing Report](https://github.com/manasi1031/Mighty-quest/blob/master/assets/documents/lighthouse-laptop-report.pdf)
 
-[Mobile Lighthouse Testing Report]()
+[Mobile Lighthouse Testing Report](https://github.com/manasi1031/Mighty-quest/blob/master/assets/documents/lighthouse-mobile-report.pdf)
 
 
 [Back to Table of Contents](#table-of-contents)
