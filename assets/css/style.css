@@ -1051,9 +1051,9 @@ section .option_list .option .icon{
 
 /** Media queries MEMORY GAME ONLY**/
 /* For Small Mobiles */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 350px) {
     .deck {
-		width: 93%;
+		width: 93% !important;
         padding: .5rem;
 	}
 
