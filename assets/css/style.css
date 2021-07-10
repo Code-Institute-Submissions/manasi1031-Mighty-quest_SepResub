@@ -1063,29 +1063,11 @@ section .option_list .option .icon{
     }
 }
 
-/** Media queries MEMORY GAME ONLY**/
-/* For Small Mobiles */
-@media screen and (max-width: 320px) {
-    .deck {
-		width: 93%;
-        padding: .5rem;
-	}
-
-    .card {
-        height: 3.5rem;
-        width: 3.5rem;
-    }
-}
-
 /* For Large Mobiles */
 @media screen and (max-width: 767px) {
     .deck {
-		width: 85%;
-	}
-
-    .card {
-        height: 4rem;
-        width: 4rem;
+        width: 320px;
+        height: 340px;
     }
 }
 
