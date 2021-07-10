@@ -31,8 +31,10 @@ hr {
 .center {
     text-align: center;
     padding: 0 20px 0 20px;
-    margin-bottom: 40px;
+}
 
+.footer-bottom {
+    margin-bottom: 40px;
 }
 
 /* Heading and navigation menu*/
@@ -1049,6 +1051,20 @@ section .option_list .option .icon{
 
 /** Media queries MEMORY GAME ONLY**/
 /* For Small Mobiles */
+@media screen and (max-width: 420px) {
+    .deck {
+		width: 93%;
+        padding: .5rem;
+	}
+
+    .card {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+/** Media queries MEMORY GAME ONLY**/
+/* For Small Mobiles */
 @media screen and (max-width: 320px) {
     .deck {
 		width: 93%;
@@ -1061,6 +1077,39 @@ section .option_list .option .icon{
     }
 }
 
+/* For Large Mobiles */
+@media screen and (max-width: 767px) {
+    .deck {
+		width: 85%;
+	}
+
+    .card {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+/** Media queries MEMORY GAME ONLY**/
+/* For Tablets and larger screens */
+@media screen and (min-width: 768px) {
+	.container {
+		font-size: inherit;
+	}
+
+	.deck {
+		width: 660px;
+		height: 680px;
+	}
+
+	.deck .card {
+		height: 125px;
+		width: 125px;
+	}
+
+	.popup {
+		width: 60%;
+	}
+}
 
 /* media queries - General for all other pages */
 /* for medium to mobile screens size from 750px wide and down */
