@@ -369,12 +369,14 @@ I then added the below CSS styles to them and they finally worked out.
 
 - _Science quiz game timeline error_
 
-![science quiz timeline error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/ADD)
+![science quiz timeline error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/science-quiz-timeline-error.jpg)
 
 The timeline keeps on going over the box and in the mobile screen it goes way out of the screen. 
 
-To rectify this I first reduced my timer from 25 seconds to 15 seconds in my quizscript.js file. (timeValue = 15). Secondly I amended the startTimerLine function to have px added by .5 instead of 1 and reduced time value to 200.
+To rectify this I first reduced my timer from 25 seconds to 15 seconds in my quizscript.js file. (timeValue = 15). Secondly, I amended the startTimerLine function to have reduced time value to 249. Even though the line stops short of the end, it still does not go out of the box now.
 
+Below is the resolved image.
+![science quiz timeline error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/science-quiz-timeline-error-resolved.jpg)
 
 
 #### Performance Testing:

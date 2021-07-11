@@ -91,7 +91,7 @@ continue_btn.onclick = ()=>{
     //calling showQuestions function
     showQuestions(0); 
     questionCounter(1); 
-    startTimer(25); 
+    startTimer(15); 
     startTimerLine(0); 
 };
 
@@ -266,11 +266,11 @@ function startTimer(time) {
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 25);
+    counterLine = setInterval(timer, 20);
     function timer(){
         time += 1; //upgrading time value with 1
-        time_line.style.width = time + ".5px"; //increasing width of time_line with px by time value
-        if(time > 200){ //if time value is greater than 200
+        time_line.style.width = time + "px"; //increasing width of time_line with px by time value
+        if(time > 249){ //if time value is greater than 249
             clearInterval(counterLine); //clear counterLine
         }
     }
