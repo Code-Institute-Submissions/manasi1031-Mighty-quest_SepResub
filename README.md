@@ -2,7 +2,7 @@
 ---------
 # Mighty Quest
 
-![Mockup Image]()
+![Mockup Image](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/mockup.jpg)
 
 ## Purpose
 ---
@@ -100,22 +100,20 @@ The below 2 font families have been used for my website mainly:
 
 I used the palette maker from the [Coolors](https://coolors.co/image-picker) website based on the hero image chosen for the index.html page. 
 
-This palette has been derived from the hero image and a [visual representation](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Images/color-collage.png)
+This palette has been derived from the hero image and a [visual representation](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/color-collage.png)
 
 Colors chosen are either direct colors or in the palette shades to give a better effect as below: 
 - HTML Background: #B4DBD4
 - HTML Body: #513832
 - All Headings: #3A1E34
 
-[Click here to view Color Palette](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/color-palette.pdf) 
-
-[Click here to view Color Colage](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/color-collage.png) 
+[Click here to view Color Palette](https://github.com/manasi1031/Mighty-quest/blob/master/assets/documents/color-palette.pdf) 
 
 #### Wireframes
 
 Balsamiq has been used to create wireframes for this project.
 
-- [Wireframes overview pdf file](https://github.com/manasi1031/Mighty-quest/blob/master/assets/Documents/mighty-quest-wireframes.pdf) 
+- [Wireframes overview pdf file](https://github.com/manasi1031/Mighty-quest/blob/master/assets/documents/mighty-quest-wireframes.pdf) 
 
 - [Laptop & Ipad view of Home page](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-ipad-home-page-view.jpg) 
 
@@ -369,11 +367,11 @@ I used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool fo
 
 Laptop Lighthouse testing View:
 
-![Laptop Lighthouse testing View]()
+![Laptop Lighthouse testing View](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/lighthouse-mobile-overview.jpg)
 
 Mobile Lighthouse testing View:
 
-![Mobile Lighthouse testing View]()
+![Mobile Lighthouse testing View](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/lighthouse-laptop-overview.jpg)
 
 
 If you wish to see the reports in complete for the website, please click on the links below:
@@ -393,7 +391,7 @@ If you wish to see the reports in complete for the website, please click on the 
 The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system. I used push command in Gitpod to save changes into GitHub.
 
 #### To deploy a project I had to:
-- Log in to GitHub and click on repository to deploy ([Mighty Quest]())
+- Log in to GitHub and click on repository to deploy ([Mighty Quest](https://github.com/manasi1031/Mighty-quest))
 - Select Settings and find GitHub Pages section on the menu on the left hand side.
 - From branch select master and then folder as root.
 - Click save and page was deployed after auto-refresh.
@@ -401,11 +399,11 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 > Your site is published at https://manasi1031.github.io/Mighty-quest/
 
 #### To run locally:
-- Log in to GitHub and click on repository to download ([Mighty Quest]())
+- Log in to GitHub and click on repository to download ([Mighty Quest](https://github.com/manasi1031/Mighty-quest))
 - Select Code and click Download the ZIP file.
 - After download you can extract the file and use it in your local environment
 
-Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github) or [Fork](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) this repository ([Mighty Quest]()) into your github account.
+Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github) or [Fork](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) this repository ([Mighty Quest](https://github.com/manasi1031/Mighty-quest)) into your github account.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -472,7 +470,17 @@ Last but not the least, I would like to thank [Code Institute](https://codeinsti
 
 ## Screen Shots
 
-TO ADD
+![Home page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-home-page.jpg)
+
+![Lessons page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-lessons-page.jpg)
+
+![Quiz page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-quiz-page.jpg)
+
+![Memory Game page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-memory-page.jpg)
+
+![Contact page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-contact-page.jpg)
+
+![404 error page Laptop view Screenshot](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/laptop-error-page.jpg)
 
 [Back to Table of Contents](#table-of-contents)
 
