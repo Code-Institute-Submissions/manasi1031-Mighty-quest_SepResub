@@ -344,6 +344,7 @@ I had already put an onclick in the quiz.html section so the span element was wo
 - _Memory page CSS styling error_
 
 ![Memory game error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-game-error.jpg)
+
 ![Memory game mobile view error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-mobile-view-error.jpg)
 
 I originally approached this from a mobile front view and started backwards. This was my problem, as then the laptop section was not working out. So I started working backwards from the largest screen size to smallest. I have kept the memory game CSS styling separate to the general website for this reason.
@@ -365,6 +366,16 @@ I then added the below CSS styles to them and they finally worked out.
     - .popup : width: 60%
         
 ![Memory game error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-game-error-resolved.jpg)
+
+- _Science quiz game timeline error_
+
+![science quiz timeline error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/ADD)
+
+The timeline keeps on going over the box and in the mobile screen it goes way out of the screen. 
+
+To rectify this I first reduced my timer from 25 seconds to 15 seconds in my quizscript.js file. (timeValue = 15). Secondly I amended the startTimerLine function to have px added by .5 instead of 1 and reduced time value to 200.
+
+
 
 #### Performance Testing:
 

@@ -266,11 +266,11 @@ function startTimer(time) {
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 25);
     function timer(){
         time += 1; //upgrading time value with 1
-        time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time > 299){ //if time value is greater than 299
+        time_line.style.width = time + ".5px"; //increasing width of time_line with px by time value
+        if(time > 200){ //if time value is greater than 200
             clearInterval(counterLine); //clear counterLine
         }
     }
