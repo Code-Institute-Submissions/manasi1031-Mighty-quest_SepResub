@@ -1165,6 +1165,14 @@ section .option_list .option .icon{
         font-size: 12px;
     }
 
+    .result_box .complete_text {
+        font-size: 15px;
+    }
+
+    .result_box .score_text span {
+        font-size: 14px;
+    }
+
     #contactus-image {
         height: 550px;
     }
