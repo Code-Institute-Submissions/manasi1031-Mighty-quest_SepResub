@@ -50,7 +50,7 @@ The challenge of every parent is to keep their child busy with meaningful work t
 ---
 ### Goals
 ---
-The main reason to create this website is for parents and children to know more about the curriculum of a year 2 child. This website deals with imparting knowledge in a playful manner. This also generates a sense of self study of minimum 30 minutes at home per school day to build the knowledge foundation for a child.
+The main reason to create this website is for parents and children to know more about the curriculum of a year 2 child. This website deals with imparting knowledge in a playful manner and is child friendly. This also generates a sense of self study of he government recommended minimum 30 minutes at home per school day to build the knowledge foundation for a child.
 
 #### Vision 
 
@@ -88,7 +88,7 @@ My aim is to provide data relevant to the user story and enhance the overall vis
 
 #### Design
 
-The website is designed to be easy and user-friendy on all type of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. User will get some interaction from the interface as links and buttons will have a hover effect.
+The website is designed to be easy and user-friendy on all type of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. User will get some interaction from the interface as the tabs, links and buttons will have a hover effect.
 
 #### Typography
 
@@ -173,7 +173,7 @@ QUIZ PAGE:
 
 MEMORY GAME PAGE:
 - This is a stress buster game for kids to play to either take a break from their study or just test their memory retaining power. 
-- The game starts automatically with clicking the first tile. 
+- The game starts automatically with clicking the first 2 tiles. 
 - It counts the time taken and also gives a congratulations pop up window with this information. 
 - This will also allow user to restart game from the congratulations pop up to improve the score.
        
@@ -181,6 +181,7 @@ CONTACT PAGE:
 - This gives user an opportunity to send an e-mail with a message giving feedback or any comments to share with creator. 
 - There is also an alert message after the message is sent. 
 - I have not added any dump-site to post the data so this is not recorded at the moment anywhere.
+- The data also does not auto populate as children should not be given control to do this. This should be parents who are currently responsible for.
        
 404 ERROR PAGE: 
 - This is not a visible site but is available in case there is any error and will have the navigation links to return back to Homepage. 
@@ -255,8 +256,8 @@ Site was tested in various devices on the Google chrome DevTools, however apart 
 
 - I have created a website that has a lessons tab for subjects, quiz tab for quiz or resources and memory game tab for playing game. There are quick click buttons or tabs or links to guide them and move between pages. For the sake of children, I have not kept a mobile menu and still kept the names for each page with links. This covers the below user stories:
 
-    _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
-    _“I want to be able to easily navigate through the website.”_
+    - _“As a first time visitor, I want to create a user friendly site for kids to use without support from adults.”_
+    - _“I want to be able to easily navigate through the website.”_
     
 - The website will have relevant information for a year 2 child (at the moment) with the current subjects in use. This will also guide them in attempting the quiz or resources that is based on these lessons. Currently we only have 3 subjects in the lesson page. In the quiz page, we have only a science quiz and resources for the other 2 subjects. This covers the below user stories:
 
@@ -292,18 +293,19 @@ Notes for code validation:
 - _Interest-Cohort Error_
 Error on console after deployment - “Error with Permissions-Policy header: Unrecognized feature: ‘interest-cohort’.”
 
-    This is not an error that I could resolve and here is the link I found online stating that I should ignore this. [Link](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780)
+    - This is not an error that I could resolve and here is the link I found online stating that I should ignore this. 
+    - [Interest-Cohort-Error-Status](https://github.community/t/i-have-no-idea-what-the-interest-cohort-is/179780)
 
 - _let variable error_
 /*jshint esversion: 6 */ has been added as per recommendation to the beginning of all my script.js files as per Slack community to ensure that “let” variable can be used.
 
 - Originally I wanted to have 2 quiz with the same javaScript for showcasing Science and Geography questions. However, my coding did not work out even after trying for 2 weeks straight. So I changed my plan of having only one quiz for Science and have resources for Geography. I am working on it separately and will add this in my next version upgrade. It is not that I will not be able to do it, but it is taking more time than I thought originally.
 
-- _In the Memory Quiz, I had a repeat button installed for kids to restart game if they are not happy with current score_ 
+- _In the Memory Quiz, I had a repeat button installed for kids to restart game if they are not happy with current score mid-way through the game_ 
 
 ![Memory Repeat Button error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-repeat-error.jpg)
 
-However, when when I tried to rectify it, my code for game stopped working. So I have removed the option from the game currently. I plan to add this back in with one of the next upgrades when we will add levels of difficulty.
+However, when when I tried to rectify it, my code for game stopped working. So I have removed the option from the game currently. I plan to add this back in with one of the next upgrades, when we will add levels of difficulty.
 
 - _Contact page submit button error_
 
@@ -319,8 +321,8 @@ Now when we try to submit without filling all details, the error message pops up
 
 ![Favicon Console error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/favicon-console-error.jpg)
 
-Originally I did not add any favicon to my website. However after deploying, I kept on seeing this error. To remove this error I went to favicon generator and created one specific to my website and added it. I added the file to my main folder and added the below to all "<head>" sections of my pages and the error was resolved.
-    "<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>"
+Originally I did not add any favicon to my website. However after deploying, I kept on seeing this error. To remove this error I went to favicon generator and created one specific to my website and added it. I added the file to my main folder and added "link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/" to all "head" sections of my pages and the error was resolved.
+    
 
 - _Span element undefined error in console from quizscript.js_
 
@@ -335,6 +337,9 @@ var span = document.getElementsByClassName("closemodal")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 };"
+
+I had already put an onclick in the quiz.html section so the span element was working from there and I left it as it is.
+
 
 - _Memory page CSS styling error_
 

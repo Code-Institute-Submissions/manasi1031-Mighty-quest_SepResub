@@ -232,10 +232,6 @@ footer {
     border: 1px solid #704848;
 }
 
-.quiz-tab button::after {
-    background-color: #E4965F;
-}
-
 .quiz-data {
     display: none;
     position: relative;
