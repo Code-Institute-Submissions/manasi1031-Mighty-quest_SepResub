@@ -978,7 +978,7 @@ section .option_list .option .icon{
 }
 
 #contactus-form textarea {
-    background: transparent;
+    background: white;
     font: inherit;
     width: 50%;
     height: 90px;
@@ -996,6 +996,7 @@ section .option_list .option .icon{
 
 #contactus-form ul {
     padding-left: 0 !Important;
+    list-style-type: none
 }
 
 #contactus-form li label{
@@ -1153,8 +1154,20 @@ section .option_list .option .icon{
         font-size: 12px;
     }
 
+    .quiz_box header .title {
+        font-size: 15px;
+    }
+
+    .quiz_box header .timer .time_left_txt {
+        font-size: 15px;
+    }
+
+    .quiz_box header .timer .timer_sec {
+        font-size: 15px;
+    }
+
     section .question_text {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     section .option_list .option .footer button {

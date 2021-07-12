@@ -376,8 +376,18 @@ The timeline keeps on going over the box and in the mobile screen it goes way ou
 To rectify this I first reduced my timer from 25 seconds to 15 seconds in my quizscript.js file. (timeValue = 15). Secondly, I amended the startTimerLine function to have reduced time value to 249. Even though the line stops short of the end, it still does not go out of the box now.
 
 Below is the resolved image.
+
 ![science quiz timeline error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/science-quiz-timeline-error-resolved.jpg)
 
+- _Nokia 5.4 model screen view error_
+
+![Nokia 5.4 model screen view error 1](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/nokia5.4-model-error-1.jpg)
+
+![Nokia 5.4 model screen view error 2](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/nokia5.4-model-error-2.jpg)
+
+When I put the project in the Slack "peer-review-group", I received feedback from one slacker stating that the view was not looking great on her device. It was a Nokia 5.4 model and she sent me the above images. The screen width is roughly 614px in size and when I looked in Chrome DevTools, there is no error in view. 
+I flagged this up with my mentor who also could not explain the reason for this error and asked me to record it as unresolved. 
+Unfortunately, I do not have access to this phone model to cross check and see error in person.
 
 #### Performance Testing:
 
@@ -432,28 +442,35 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 
 #### Content
 
-- The material for lessons and quiz / resources is taken from my daughters school - Bonygate Primary School. I have checked with her class teacher and these are not copyrighted and can be used as per my choice.
+- The material for lessons and quiz / resources is taken from my daughters school - Bonnygate Primary School, South Ockendon, Essex, UK. I have checked with her class teacher and these are not copyrighted and can be used freely.
 
 - The maths sheets (as used by school already) for download have been taken from - https://www.activityshelter.com/year-2-math-worksheets-free/
 
-- To complete this project I used Code Institute student template: [Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+- To complete this project I used Code Institute student template: 
+[Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 - I have worked on this project following a step-by-step approach from the Love Maths project from Code Institute to avoid missing any steps but at no point is any information copied.
 
 - In general, I used the knowledge and reference of [w3schools](https://www.w3schools.com/) to guide me and learn more.
 
 - I have used data from W3schools.com to show how to collapse the tabs and modified it to suit my content for the Lesson section. 
+
     https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
 
-- While I found it extremely difficult to make a memory game from scratch, I decided to use a step by step approach from the below tutorial link and modified it to suit my page:
+- While I found it extremely difficult to make a memory game from scratch, I decided to use a step by step approach from the below tutorial link and modified it to suit my page.
+
     https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
 
-- I have used the below links to as reference material to create the Science Quiz but obviously modified to my requirements:
+- I have used the below links to as reference material to create the Science Quiz but obviously modified to my requirements.
+
     https://www.codemahal.com/video/javascript-quiz-tutorial/#:~:text=JavaScript%20quiz%20tutorial.%201%20Step%201%20%E2%80%93%20Setting,a%20function%20to%20display%20the%20questions.%20More%20items 
+
     and 
+
     https://www.wikihow.com/Make-a-Basic-JavaScript-Quiz 
 
-- For the Maths resources under quiz section, I had to refer to material from this website to work out an overview of viewing images:
+- For the Maths resources under quiz section, I had to refer to material from this website to work out an overview of viewing images.
+
     https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery
 
 #### Media
@@ -479,6 +496,7 @@ All images obtained are non-copyrighted and can be used freely:
 #### Acknowledgements
 
 I could not have done this project without the guidance and confidence of my mentor - Adegbenga Adeye.
+He also was the person who suggested to use "Dora the Explorer" for the website.
 
 Last but not the least, I would like to thank [Code Institute](https://codeinstitute.net/) for their support.
 
