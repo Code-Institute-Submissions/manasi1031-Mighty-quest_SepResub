@@ -3,6 +3,7 @@
 /* Function called to confirm that message has been submitted to sender and gives an alert*/
 /* Data is not recorded anywhere or populated*/
 function submitForm(){
+  document.getElementById("contactus-form").submit();
   // Define variables
   let name = document.getElementById("fname").value;
   var email = document.getElementById("email").value;
@@ -19,3 +20,4 @@ function submitForm(){
   }
 }
 
+document.getElementById("submit-button").addEventListener("click", submitForm);
