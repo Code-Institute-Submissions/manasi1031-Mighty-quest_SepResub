@@ -82,9 +82,10 @@ var displayCard = function (){
 
 /* Function to add opened cards to OpenedCards list 
 * and check if cards are match or not */
-function cardOpen() {
+function cardOpen(type) {
     openedCards.push(this);
     var len = openedCards.length;
+    type = type.getAttribute("data-type");
     if(len === 2){
         moveCounter();
         if(openedCards[0].type === openedCards[1].type){
