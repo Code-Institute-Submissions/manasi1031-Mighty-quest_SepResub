@@ -148,7 +148,7 @@ function moveCounter(){
 }
 
 // Game timer
-var second = 0, minute = 0; hour = 0;
+var second = 0, minute = 0, hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
@@ -170,7 +170,7 @@ function startTimer(){
 function congratulations(){
     if (matchedCard.length == 16){
         clearInterval(interval);
-        finalTime = timer.innerHTML;
+        let finalTime = timer.innerHTML;
 
         // show congratulations modal
         modal.classList.add("show");
@@ -207,3 +207,5 @@ for (var i = 0; i < cards.length; i++){
     card.addEventListener("click", cardOpen);
     card.addEventListener("click",congratulations);
 }
+
+document.getElementById("play-again").addEventListener("click", playAgain);

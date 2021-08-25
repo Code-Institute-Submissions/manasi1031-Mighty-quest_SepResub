@@ -11,11 +11,9 @@ function submitForm(){
   // conditional statement to return alert
   if( name ==='' || email ==='' || message ===''){
     alert("OOPS!! Please fill in all fields and try sending again...!");
-    console.log('Message submit failure'); //records failure message to console
     return false;
   }else{
     alert("Thank you for emailing me, I will respond as soon as I can!");
-    console.log('Message submit success'); //records success message to console
     return true;
   }
 }
