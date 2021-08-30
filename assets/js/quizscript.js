@@ -17,6 +17,8 @@ function openQuiz(event, subject) {
     event.currentTarget.className += " active";
 }
 
+document.getElementById("quiz-links").addEventListener("click", openQuiz);
+
 /** Science quiz section */
 
 /** Science section questions */

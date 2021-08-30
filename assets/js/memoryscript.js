@@ -85,7 +85,7 @@ var displayCard = function (){
 function cardOpen(type) {
     openedCards.push(this);
     var len = openedCards.length;
-    type = type.getAttribute("data-type");
+    type = document.getElementsByClassName("card").getAttribute("data-type");
     if(len === 2){
         moveCounter();
         if(openedCards[0].type === openedCards[1].type){
@@ -185,7 +185,6 @@ function congratulations(){
     }
 }
 
-
 // Close icon on congratulations modal
 function closeModal(){
     closeicon.addEventListener("click", function(e){
@@ -193,7 +192,6 @@ function closeModal(){
         startGame();
     });
 }
-
 
 // For user to play Again 
 function playAgain(){
@@ -209,4 +207,5 @@ for (var i = 0; i < cards.length; i++){
     card.addEventListener("click",congratulations);
 }
 
+// Add Event Listner to invoke the play game function
 document.getElementById("play-again").addEventListener("click", playAgain);

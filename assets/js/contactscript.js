@@ -19,4 +19,5 @@ function submitForm(event){
   }
 }
 
+// event listner to invoke function of form submit
 document.getElementById("submit-button").addEventListener("click", submitForm);
