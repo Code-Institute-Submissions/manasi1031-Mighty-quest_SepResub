@@ -414,7 +414,7 @@ footer {
     user-select: none;
 }
 
-.quiz_box header .time_line{
+.quiz_box header{
     position: absolute;
     bottom: 0px;
     left: 0px;

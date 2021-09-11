@@ -17,7 +17,7 @@ function openQuiz(event, subject) {
     event.currentTarget.className += " active";
 }
 
-document.getElementById("quiz-links").addEventListener("click", openQuiz);
+//document.getElementsByClassName("quiz-links").addEventListener("click", openQuiz);
 
 /** Science quiz section */
 
@@ -70,7 +70,6 @@ let continue_btn = info_box.querySelector(".buttons .restart");
 let quiz_box = document.querySelector(".quiz_box");
 let result_box = document.querySelector(".result_box");
 let option_list = document.querySelector(".option_list");
-let time_line = document.querySelector("header .time_line");
 let timeText = document.querySelector(".timer .time_left_txt");
 let timeCount = document.querySelector(".timer .timer_sec");
 
@@ -94,7 +93,6 @@ continue_btn.onclick = ()=>{
     showQuestions(0); 
     questionCounter(1); 
     startTimer(15); 
-    startTimerLine(0); 
 };
 
 let timeValue =  15;
@@ -124,7 +122,6 @@ restart_quiz.onclick = ()=>{
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
-    startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 };
@@ -148,7 +145,6 @@ next_btn.onclick = ()=>{
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
-        startTimerLine(widthValue); //calling startTimerLine function
         timeText.textContent = "Time Left"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }else{
@@ -263,17 +259,6 @@ function startTimer(time) {
                 option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
             }
             next_btn.classList.add("show"); //show the next button if user selected any option
-        }
-    }
-}
-
-function startTimerLine(time){
-    counterLine = setInterval(timer, 20);
-    function timer(){
-        time += 1; //upgrading time value with 1
-        time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time > 249){ //if time value is greater than 249
-            clearInterval(counterLine); //clear counterLine
         }
     }
 }
