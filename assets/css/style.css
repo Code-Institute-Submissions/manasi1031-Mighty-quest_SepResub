@@ -414,14 +414,6 @@ footer {
     user-select: none;
 }
 
-.quiz_box header{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 3px;
-    background: gray;
-}
-
 section .question_text{
     font-size: 25px;
     font-weight: 600;
