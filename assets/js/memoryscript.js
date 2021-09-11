@@ -85,7 +85,7 @@ var displayCard = function (){
 function cardOpen(type) {
     openedCards.push(this);
     var len = openedCards.length;
-    type = document.getElementsByClassName("deck card")[0].getAttribute("data-type");
+    type = document.getElementsByClassName("card")[0].getAttribute("data-type");
     if(len === 2){
         moveCounter();
         if(openedCards[0].type === openedCards[1].type){
