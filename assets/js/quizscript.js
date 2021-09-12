@@ -170,7 +170,7 @@ function showQuestions(index) {
     let option = option_list.querySelectorAll(".option");
     // set onclick attribute to all available options
     for(let i=0; i < option.length; i++){
-        option[i].setAttribute("onclick", "optionSelected(this)");
+        option[i].onclick("onclick", optionSelected);
     }
 }
 
@@ -264,16 +264,16 @@ function questionCounter(index){
 
 // Maths section Resources Modal or pop up section
 // Get the modal and define variable
-var modal = document.getElementById('myModal');
+let modal = document.getElementById('myModal');
     
 // Get the image and insert it inside the modal and define variables
 // use its "alt" text as a caption
-var img1 = document.getElementById('myImg1');
-var img2 = document.getElementById('myImg2');
-var img3 = document.getElementById('myImg3');
-var img4 = document.getElementById('myImg4');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+let img1 = document.getElementById('myImg1');
+let img2 = document.getElementById('myImg2');
+let img3 = document.getElementById('myImg3');
+let img4 = document.getElementById('myImg4');
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("caption");
 
 //image 1 function
 img1.onclick = function(){
