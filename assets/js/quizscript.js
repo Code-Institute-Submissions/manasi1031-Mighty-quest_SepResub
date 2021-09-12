@@ -170,7 +170,7 @@ function showQuestions(index) {
     let option = option_list.querySelectorAll(".option");
     // set onclick attribute to all available options
     for(let i=0; i < option.length; i++){
-        option[i].onclick("onclick", optionSelected);
+        option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
 
