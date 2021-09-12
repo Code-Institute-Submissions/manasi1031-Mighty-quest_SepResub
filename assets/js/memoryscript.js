@@ -27,7 +27,7 @@ let openedCards = [];
 
 // This shuffles cards array and returns a shuffledarray
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
@@ -52,7 +52,7 @@ function startGame(){
     cards = shuffle(cards);
 
     // remove all exisiting classes from each card
-    for (var i = 0; i < cards.length; i++){
+    for (let i = 0; i < cards.length; i++){
         deck.innerHTML = "";
         [].forEach.call(cards, function(item) {
             deck.appendChild(item);
@@ -68,13 +68,13 @@ function startGame(){
     second = 0;
     minute = 0; 
     hour = 0;
-    var timer = document.querySelector(".timer");
+    let timer = document.querySelector(".timer");
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
 }
 
 // Toggles open and show class to display cards
-var displayCard = function (){
+let displayCard = function (){
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
@@ -84,7 +84,7 @@ var displayCard = function (){
 * and check if cards are match or not */
 function cardOpen(type) {
     openedCards.push(this);
-    var len = openedCards.length;
+    let len = openedCards.length;
     type = document.getElementsByClassName("card")[0].getAttribute("data-type");
     if(len === 2){
         moveCounter();
@@ -129,7 +129,7 @@ function disable(){
 function enable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.remove('disabled');
-        for(var i = 0; i < matchedCard.length; i++){
+        for(let i = 0; i < matchedCard.length; i++){
             matchedCard[i].classList.add("disabled");
         }
     });
@@ -149,9 +149,9 @@ function moveCounter(){
 }
 
 // Game timer
-var second = 0, minute = 0, hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
+let second = 0, minute = 0, hour = 0;
+let timer = document.querySelector(".timer");
+let interval;
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
@@ -200,7 +200,7 @@ function playAgain(){
 }
 
 // loop to add event listeners to each card
-for (var i = 0; i < cards.length; i++){
+for (let i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);

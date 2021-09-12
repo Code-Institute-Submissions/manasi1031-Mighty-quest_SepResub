@@ -7,8 +7,8 @@ function submitForm(event){
   event.preventDefault();
   // Define variables
   let name = document.getElementById("fname").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementsByClassName("large").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementsByClassName("large").value;
   // conditional statement to return alert
   if( name ==='' || email ==='' || message ===''){
     alert("OOPS!! Please fill in all fields and try sending again...!");

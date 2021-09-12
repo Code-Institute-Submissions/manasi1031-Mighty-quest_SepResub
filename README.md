@@ -280,9 +280,11 @@ At the and of the project I used the below websites to validate the codes:
 
 Notes for code validation:
 - JavaScript:
-    - The JS validator for contact page states that that submitForm is unused variable. However this is a function. 
-    - The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. However these are functions. 
-    - The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined. However, they are working correctly in my code and have not shown any console errors. So I have ignored them.
+    - The JS validator for contact page states that that submitForm is unused variable. Please see the "Issues found during Deployment" section for clarity on this.
+
+    - The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. Please see the "Issues found during Deployment" section for clarity on this.
+
+    - The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined. Please see the "Issues found during Deployment" section for clarity on this.
 
 - HTML:
     - The "type" is required on javascript front to run game and not relevant to HTML. So this error has been ignored by me.
@@ -375,9 +377,38 @@ The timeline keeps on going over the box and in the mobile screen it goes way ou
 
 To rectify this I first reduced my timer from 25 seconds to 15 seconds in my quizscript.js file. (timeValue = 15). Secondly, I amended the startTimerLine function to have reduced time value to 249. Even though the line stops short of the end, it still does not go out of the box now.
 
-Below is the resolved image.
+However, this did not solve the problem, as it looks good in the mobile screen but not in the larger screens. This time line is just not responsive enough. For this reason, I have deleted the timeline from the science quiz currently.
 
-![science quiz timeline error resolved](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/science-quiz-timeline-error-resolved.jpg)
+- _Quiz Header error after deleting the timeline_
+
+![Quiz Header Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-header-error.jpg)
+
+After the timeline was deleted from the quiz, I had the above error pop up. To resolve the error, I just had to delete the below from CSS and the error was resolved.
+        .quiz_box header{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 3px;
+            background: gray;
+        }
+
+- _The JS validator for contact page states that that submitForm is unused variable._
+
+![Contact Script Unused Variable Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-script-unused-variable-error.jpg)
+
+The above error resulted from a fact that I had the "onclick" in the HTML page of Contact and not on Javascript. To avoid this error, I removed the "onclick" from the HTML page from line 71 and added to my quiz javascript as below:
+    - line 7 stating "event.preventDefault()".
+    - Event listener on line 23 stating "document.getElementById("submit-button").submit
+
+While doing the above, I still received an error as below as the event listener was not valid still.
+
+![Contact Script Error 2](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-script-error-2.jpg)
+
+Then I amended the sentence to below:
+    - Event listener on line 23 stating "document.getElementById("submit-button").addEventListener("click", submitForm)"
+
+This sorted the validation error and now quizscript.js file does not have any validation error.
+
 
 - _Nokia 5.4 model screen view error_
 
@@ -388,6 +419,39 @@ Below is the resolved image.
 When I put the project in the Slack "peer-review-group", I received feedback from one slacker stating that the view was not looking great on her device. It was a Nokia 5.4 model and she sent me the above images. The screen width is roughly 614px in size and when I looked in Chrome DevTools, there is no error in view. 
 I flagged this up with my mentor who also could not explain the reason for this error and asked me to record it as unresolved. 
 Unfortunately, I do not have access to this phone model to cross check and see error in person.
+
+
+- _Quiz Page Console Log Comments - From feedback received_
+
+![Quiz Console Log Comments](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-console-log-comments.jpg)
+
+This is not an error, however, I received feedback that when we deploy a project, we should remove the console log comments from the terminal and I have removed this now.
+
+- _QuizScript.js Page Validation Error_
+
+![Quiz Page Validation Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-page-validation-error.jpg)
+
+The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. 
+    - The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well.
+
+    - With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable has been used. Unfortunately, everytime, I try to amend this to remove the unused variable error, my code breaks. I did finally speak to my mentor regarding this, and he advised that I should state it here as not resolved validation error. However, as per my mentor and people working in the industry (I did try to look for support with Slack and also people I know who specialize in Javascript in the IT Industry), Industry standards wise the code is correct as the function is invoked as a string and called on line 173. They all asked me to ignore the validation error on this occassion for the project.
+
+
+- _The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined._
+
+![Memory Page Validation Error JS](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-page-validation-error.jpg)
+
+The above resulted due to the following lines:
+    - var second = 0, minute = 0; hour = 0;
+    - finalTime = timer.innerHTML;
+    - playAgain function being onclick from the HTML page and not the JS page. 
+
+To resolve the issue, I did the below: 
+    - The first line I changed to - let second = 0, minute = 0, hour = 0;
+    - The second line I changed to - let finalTime = timer.innerHTML;
+    - I also changed all var to let (As per feedback received)
+    - To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+
 
 #### Performance Testing:
 
