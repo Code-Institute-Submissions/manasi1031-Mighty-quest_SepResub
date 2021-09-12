@@ -407,7 +407,7 @@ While doing the above, I still received an error as below as the event listener 
 Then I amended the sentence to below:
     - Event listener on line 23 stating "document.getElementById("submit-button").addEventListener("click", submitForm)"
 
-This sorted the validation error and now quizscript.js file does not have any validation error.
+This sorted the validation error and now contact.js file does not have any validation error.
 
 
 - _Nokia 5.4 model screen view error_
@@ -432,9 +432,10 @@ This is not an error, however, I received feedback that when we deploy a project
 ![Quiz Page Validation Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-page-validation-error.jpg)
 
 The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. 
-    - The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well.
 
-    - With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable has been used. Unfortunately, everytime, I try to amend this to remove the unused variable error, my code breaks. I did finally speak to my mentor regarding this, and he advised that I should state it here as not resolved validation error. However, as per my mentor and people working in the industry (I did try to look for support with Slack and also people I know who specialize in Javascript in the IT Industry), Industry standards wise the code is correct as the function is invoked as a string and called on line 173. They all asked me to ignore the validation error on this occassion for the project.
+- The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well.
+
+- With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable has been used. Unfortunately, everytime, I try to amend this to remove the unused variable error, my code breaks. I did finally speak to my mentor regarding this, and he advised that I should state it here as not resolved validation error. However, as per my mentor and people working in the industry (I did try to look for support with Slack and also people I know who specialize in Javascript in the IT Industry), Industry standards wise the code is correct as the function is invoked as a string and called on line 173. They all asked me to ignore the validation error on this occassion for the project.
 
 
 - _The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined._
