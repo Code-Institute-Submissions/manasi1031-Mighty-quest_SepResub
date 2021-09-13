@@ -744,11 +744,6 @@ section .option_list .option .icon{
     box-sizing: border-box;
 }
 
-.deck.card li{
-    display: list-item;
-    text-align: -webkit-match-parent;
-    }    
-
 .deck .card.open {
 	transform: rotateY(0);
 	background: #E3C53C;

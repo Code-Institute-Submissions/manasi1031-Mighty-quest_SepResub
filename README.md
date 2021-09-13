@@ -279,16 +279,11 @@ At the and of the project I used the below websites to validate the codes:
 - [JavaScript Validator](https://jshint.com/) to test javascript.
 
 Notes for code validation:
+- HTML: No errors found.
+- CSS: No errors found.
 - JavaScript:
-    - The JS validator for contact page states that that submitForm is unused variable. Please see the "Issues found during Deployment" section for clarity on this.
-
-    - The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. Please see the "Issues found during Deployment" section for clarity on this.
-
-    - The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined. Please see the "Issues found during Deployment" section for clarity on this.
-
-- HTML:
-    - The "type" is required on javascript front to run game and not relevant to HTML. So this error has been ignored by me.
-    ![Image of type error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-html-validation-error.jpg)
+    - The JS validator for quiz page states that that openQuiz is unused variable. Please see the "Issues found during Deployment" section for clarity on this.
+    - Apart from this no errors found on any other pages.
 
 #### Issues found during deployment:
 
@@ -435,7 +430,15 @@ The JS validator for quiz page states that that openQuiz and optionSelected are 
 
 - The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well.
 
-- With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable has been used. Unfortunately, everytime, I try to amend this to remove the unused variable error, my code breaks. I did finally speak to my mentor regarding this, and he advised that I should state it here as not resolved validation error. However, as per my mentor and people working in the industry (I did try to look for support with Slack and also people I know who specialize in Javascript in the IT Industry), Industry standards wise the code is correct as the function is invoked as a string and called on line 173. They all asked me to ignore the validation error on this occassion for the project.
+- With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable had been used. However, as it gave a validation error, I changed the functions as below:
+
+In the showQuestions function, I did the below:
+Added this line - option[i].addEventListener("click", optionSelected);
+Deleted this line - option[i].setAttribute("onclick", "optionSelected(this)");
+
+In the optionSelected function, I did the below:
+Removed the parameter from the main function line - function optionSelected()
+Added a new variable - let answer = this; 
 
 
 - _The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined._
@@ -452,6 +455,40 @@ To resolve the issue, I did the below:
     - The second line I changed to - let finalTime = timer.innerHTML;
     - I also changed all var to let (As per feedback received)
     - To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+
+- _The "type" attribute on the "li" element is obselete - HTML validation error_
+
+![Image of type error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-html-validation-error.jpg)
+
+To rectify this error, I used a W3Schools lesson on [data type attributes](https://www.w3schools.com/tags/att_global_data.asp) to use as a reference guide and amended the HTML section to have each li element as below as an example:
+
+            <li class="card" data-cardtype="apple">
+                <i class="fas fa-apple-alt"></i>
+            </li>
+
+Then I amended the Memory.js file cardOpen function as below to show the changes:
+
+/* Function to add opened cards to OpenedCards list
+* and check if cards are match or not */
+function cardOpen() {
+    openedCards.push(this);
+
+    var len = openedCards.length;
+    if(len === 2){
+        moveCounter();
+
+        let firstCardOpened = openedCards[0];
+        let secondCardOpened = openedCards[1];
+
+        if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype){
+            matched();
+        } else {
+            unmatched();
+        }
+    }
+}
+
+This resulting in the removal of the validation error.
 
 
 #### Performance Testing:
