@@ -80,15 +80,19 @@ var displayCard = function (){
     this.classList.toggle("disabled");
 }; 
 
-/* Function to add opened cards to OpenedCards list 
+/* Function to add opened cards to OpenedCards list
 * and check if cards are match or not */
-function cardOpen(type) {
+function cardOpen() {
     openedCards.push(this);
+
     var len = openedCards.length;
-    type = document.getElementsByClassName("card")[0].getAttribute("data-type");
     if(len === 2){
         moveCounter();
-        if(openedCards[0].type === openedCards[1].type){
+
+        let firstCardOpened = openedCards[0];
+        let secondCardOpened = openedCards[1];
+
+        if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype){
             matched();
         } else {
             unmatched();
