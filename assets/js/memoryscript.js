@@ -40,7 +40,6 @@ function shuffle(array) {
 
 // shuffles cards when page is refreshed / loads
 document.body.onload = startGame(); 
-document.body.onload = startGame();
 
 // function to start a new game
 function startGame(){
@@ -51,7 +50,7 @@ function startGame(){
     // shuffle deck
     cards = shuffle(cards);
 
-    // remove all exisiting classes from each card
+    // remove all existing classes from each card
     for (var i = 0; i < cards.length; i++){
         deck.innerHTML = "";
         [].forEach.call(cards, function(item) {
@@ -80,18 +79,15 @@ var displayCard = function (){
     this.classList.toggle("disabled");
 }; 
 
-/* Function to add opened cards to OpenedCards list
+/* Function to add opened cards to OpenedCards list 
 * and check if cards are match or not */
 function cardOpen() {
     openedCards.push(this);
-
     var len = openedCards.length;
     if(len === 2){
         moveCounter();
-
         let firstCardOpened = openedCards[0];
         let secondCardOpened = openedCards[1];
-
         if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype){
             matched();
         } else {
@@ -155,7 +151,7 @@ function moveCounter(){
 // Game timer
 var second = 0, minute = 0, hour = 0;
 var timer = document.querySelector(".timer");
-let interval;
+var interval;
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
