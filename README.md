@@ -379,28 +379,29 @@ However, this did not solve the problem, as it looks good in the mobile screen b
 ![Quiz Header Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-header-error.jpg)
 
 After the timeline was deleted from the quiz, I had the above error pop up. To resolve the error, I just had to delete the below from CSS and the error was resolved.
-        .quiz_box header{
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            height: 3px;
-            background: gray;
-        }
+
+In the .quiz_box header, I basically deleted everything which had the below information:
+- position: absolute
+- bottom: 0px
+- left: 0px
+- height: 3px
+- background: gray
+
 
 - _The JS validator for contact page states that that submitForm is unused variable._
 
 ![Contact Script Unused Variable Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-script-unused-variable-error.jpg)
 
 The above error resulted from a fact that I had the "onclick" in the HTML page of Contact and not on Javascript. To avoid this error, I removed the "onclick" from the HTML page from line 71 and added to my quiz javascript as below:
-    - line 7 stating "event.preventDefault()".
-    - Event listener on line 23 stating "document.getElementById("submit-button").submit
+- line 7 stating "event.preventDefault()".
+- Event listener on line 23 stating "document.getElementById("submit-button").submit
 
 While doing the above, I still received an error as below as the event listener was not valid still.
 
 ![Contact Script Error 2](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-script-error-2.jpg)
 
 Then I amended the sentence to below:
-    - Event listener on line 23 stating "document.getElementById("submit-button").addEventListener("click", submitForm)"
+- Event listener on line 23 stating "document.getElementById("submit-button").addEventListener("click", submitForm)"
 
 This sorted the validation error and now contact.js file does not have any validation error.
 
@@ -422,23 +423,24 @@ Unfortunately, I do not have access to this phone model to cross check and see e
 
 This is not an error, however, I received feedback that when we deploy a project, we should remove the console log comments from the terminal and I have removed this now.
 
+
 - _QuizScript.js Page Validation Error_
 
 ![Quiz Page Validation Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/quiz-page-validation-error.jpg)
 
 The JS validator for quiz page states that that openQuiz and optionSelected are unused variables. 
 
-- The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well.
+- The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well. For this section, I have chosen not to change the code and made the relevant notes in the Javascript and HTML files accordingly based on the feedback received. This is the only variable that is called in the HTML page in the whole website.
 
 - With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable had been used. However, as it gave a validation error, I changed the functions as below:
 
 In the showQuestions function, I did the below:
-Added this line - option[i].addEventListener("click", optionSelected);
-Deleted this line - option[i].setAttribute("onclick", "optionSelected(this)");
+- Added this line - option[i].addEventListener("click", optionSelected);
+- Deleted this line - option[i].setAttribute("onclick", "optionSelected(this)");
 
 In the optionSelected function, I did the below:
-Removed the parameter from the main function line - function optionSelected()
-Added a new variable - let answer = this; 
+- Removed the parameter from the main function line - function optionSelected()
+- Added a new variable - let answer = this; 
 
 
 - _The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined._
@@ -446,15 +448,16 @@ Added a new variable - let answer = this;
 ![Memory Page Validation Error JS](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-page-validation-error.jpg)
 
 The above resulted due to the following lines:
-    - var second = 0, minute = 0; hour = 0;
-    - finalTime = timer.innerHTML;
-    - playAgain function being onclick from the HTML page and not the JS page. 
+- var second = 0, minute = 0; hour = 0;
+- finalTime = timer.innerHTML;
+- playAgain function being onclick from the HTML page and not the JS page. 
 
 To resolve the issue, I did the below: 
-    - The first line I changed to - let second = 0, minute = 0, hour = 0;
-    - The second line I changed to - let finalTime = timer.innerHTML;
-    - I also changed all var to let (As per feedback received)
-    - To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+- The first line I changed to - let second = 0, minute = 0, hour = 0;
+- The second line I changed to - let finalTime = timer.innerHTML;
+- I also changed all var to let (As per feedback received)
+- To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+
 
 - _The "type" attribute on the "li" element is obselete - HTML validation error_
 
@@ -462,31 +465,15 @@ To resolve the issue, I did the below:
 
 To rectify this error, I used a W3Schools lesson on [data type attributes](https://www.w3schools.com/tags/att_global_data.asp) to use as a reference guide and amended the HTML section to have each li element as below as an example:
 
-            <li class="card" data-cardtype="apple">
-                <i class="fas fa-apple-alt"></i>
-            </li>
+_class="card" data-cardtype="apple"_
+
+I replaced the type with data-cardType in the above example in all the lines.
 
 Then I amended the Memory.js file cardOpen function as below to show the changes:
 
-/* Function to add opened cards to OpenedCards list
-* and check if cards are match or not */
-function cardOpen() {
-    openedCards.push(this);
-
-    var len = openedCards.length;
-    if(len === 2){
-        moveCounter();
-
-        let firstCardOpened = openedCards[0];
-        let secondCardOpened = openedCards[1];
-
-        if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype){
-            matched();
-        } else {
-            unmatched();
-        }
-    }
-}
+- Added line 89 - let firstCardOpened = openedCards[0];
+- Added line 90 - let secondCardOpened = openedCards[1];
+- Amended line 91 to this - if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype)
 
 This resulting in the removal of the validation error.
 
@@ -556,7 +543,6 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 - In general, I used the knowledge and reference of [w3schools](https://www.w3schools.com/) to guide me and learn more.
 
 - I have used data from W3schools.com to show how to collapse the tabs and modified it to suit my content for the Lesson section. 
-
     https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
 
 - While I found it extremely difficult to make a memory game from scratch, I decided to use a step by step approach from the below tutorial link and modified it to suit my page.
@@ -574,6 +560,9 @@ Alternatively you can [Clone](https://docs.github.com/en/github/creating-cloning
 - For the Maths resources under quiz section, I had to refer to material from this website to work out an overview of viewing images.
 
     https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery
+
+- I have used the [data type attributes](https://www.w3schools.com/tags/att_global_data.asp) to use as a reference guide to show the memory card referencing in my javascript for the memory page.
+
 
 #### Media
 

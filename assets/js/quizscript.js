@@ -2,7 +2,9 @@
 
 /** Function to view quiz by subject 
  * This should initiate the subject view only
- * onclick is mentioned on html file and not js for this - See Readme.md
+ * onclick is mentioned on html file and not js for this 
+ * See Readme.md for details in code validation & issues 
+ * for deployment
 */
 function openQuiz(event, subject) {
     let i;
