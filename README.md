@@ -381,11 +381,12 @@ However, this did not solve the problem, as it looks good in the mobile screen b
 After the timeline was deleted from the quiz, I had the above error pop up. To resolve the error, I just had to delete the below from CSS and the error was resolved.
 
 In the .quiz_box header, I basically deleted everything which had the below information:
-- position: absolute
-- bottom: 0px
-- left: 0px
-- height: 3px
-- background: gray
+
+    - position: absolute
+    - bottom: 0px
+    - left: 0px
+    - height: 3px
+    - background: gray
 
 
 - _The JS validator for contact page states that that submitForm is unused variable._
@@ -393,8 +394,9 @@ In the .quiz_box header, I basically deleted everything which had the below info
 ![Contact Script Unused Variable Error](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/contact-script-unused-variable-error.jpg)
 
 The above error resulted from a fact that I had the "onclick" in the HTML page of Contact and not on Javascript. To avoid this error, I removed the "onclick" from the HTML page from line 71 and added to my quiz javascript as below:
-- line 7 stating "event.preventDefault()".
-- Event listener on line 23 stating "document.getElementById("submit-button").submit
+
+    - line 7 stating "event.preventDefault()".
+    - Event listener on line 23 stating "document.getElementById("submit-button").submit
 
 While doing the above, I still received an error as below as the event listener was not valid still.
 
@@ -433,30 +435,29 @@ The JS validator for quiz page states that that openQuiz and optionSelected are 
 - The openQuiz function is called with "onclick" in the HTML page and not the Javascript page and hence this says as unused. I have added comments in the quiz.html and quizscript.js stating the same as well. For this section, I have chosen not to change the code and made the relevant notes in the Javascript and HTML files accordingly based on the feedback received. This is the only variable that is called in the HTML page in the whole website.
 
 - With regards to the optionSelected function, I have called for this as a string in the showQuestions function as well, so the variable had been used. However, as it gave a validation error, I changed the functions as below:
-
-In the showQuestions function, I did the below:
-- Added this line - option[i].addEventListener("click", optionSelected);
-- Deleted this line - option[i].setAttribute("onclick", "optionSelected(this)");
-
-In the optionSelected function, I did the below:
-- Removed the parameter from the main function line - function optionSelected()
-- Added a new variable - let answer = this; 
+    - In the showQuestions function, I did the below:
+        - Added this line - option[i].addEventListener("click", optionSelected);
+        - Deleted this line - option[i].setAttribute("onclick", "optionSelected(this)");
+    - In the optionSelected function, I did the below:
+        - Removed the parameter from the main function line - function optionSelected()
+        - Added a new variable - let answer = this; 
 
 
 - _The JS validator for memory page states that playAgain is an unused variable and hour and finalTime is not defined._
 
 ![Memory Page Validation Error JS](https://github.com/manasi1031/Mighty-quest/blob/master/assets/images/memory-page-validation-error.jpg)
 
-The above resulted due to the following lines:
-- var second = 0, minute = 0; hour = 0;
-- finalTime = timer.innerHTML;
-- playAgain function being onclick from the HTML page and not the JS page. 
+- The above resulted due to the following lines:
+    - var second = 0, minute = 0; hour = 0;
+    - finalTime = timer.innerHTML;
+    - playAgain function being onclick from the HTML page and not the JS page. 
 
-To resolve the issue, I did the below: 
-- The first line I changed to - let second = 0, minute = 0, hour = 0;
-- The second line I changed to - let finalTime = timer.innerHTML;
-- I also changed all var to let (As per feedback received)
-- To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+- To resolve the issue, I did the below: 
+    - The first line I changed to - let second = 0, minute = 0, hour = 0;
+    - The second line I changed to - let finalTime = timer.innerHTML;
+    - I also changed all var to let (As per feedback received)
+    - To resolve the third issue, I removed the "onclick" from HTML for playAgain and added an event listener at the end of the page for playAgain function to be invoked from the JS page. (document.getElementById("play-again").addEventListener("click", playAgain))
+
 
 
 - _The "type" attribute on the "li" element is obselete - HTML validation error_
@@ -465,15 +466,15 @@ To resolve the issue, I did the below:
 
 To rectify this error, I used a W3Schools lesson on [data type attributes](https://www.w3schools.com/tags/att_global_data.asp) to use as a reference guide and amended the HTML section to have each li element as below as an example:
 
-_class="card" data-cardtype="apple"_
+    _class="card" data-cardtype="apple"_
 
 I replaced the type with data-cardType in the above example in all the lines.
 
 Then I amended the Memory.js file cardOpen function as below to show the changes:
-
-- Added line 89 - let firstCardOpened = openedCards[0];
-- Added line 90 - let secondCardOpened = openedCards[1];
-- Amended line 91 to this - if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype)
+    
+    - Added line 89 - let firstCardOpened = openedCards[0];
+    - Added line 90 - let secondCardOpened = openedCards[1];
+    - Amended line 91 to this - if(firstCardOpened.dataset.cardtype === secondCardOpened.dataset.cardtype)
 
 This resulting in the removal of the validation error.
 
